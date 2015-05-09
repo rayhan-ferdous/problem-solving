@@ -1,0 +1,1591 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en" dir="ltr">
+    <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script>
+            (function(_,e,rr,s){_errs=[s];var c=_.onerror;_.onerror=function(){var a=arguments;_errs.push(a);
+            c&&c.apply(this,a)};var b=function(){var c=e.createElement(rr),b=e.getElementsByTagName(rr)[0];
+            c.src="//beacon.errorception.com/"+s+".js";c.async=!0;b.parentNode.insertBefore(c,b)};
+            _.addEventListener?_.addEventListener("load",b,!1):_.attachEvent("onload",b)})
+            (window,document,"script","4e7c8fce06a9ab05530008e5");
+        </script>
+
+		<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+        <title>Rectangular Queries | CodeChef</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="programming, language, algorithm, contest, contester, Java, C#, Pascal, C, C++, python, ruby, caml, ocaml, perl, haskell, lisp, prolog, fortran, assembler, asembler, functional, online, judge, problem, problemset, ACM" />
+<link rel="shortcut icon" href="/misc/favicon.ico" type="image/x-icon" />
+        <link type="text/css" rel="stylesheet" media="all" href="http://www.codechef.com/sites/default/files/css/css_a5c7e3a9b2cbc13c4c1353a89331b274.css" />
+        <link rel="stylesheet" type="text/css" href="/sites/all/themes/abessive/acmkanpurproblem.css" />
+        <script type="text/javascript" src="/sites/all/modules/jquery_update/replace/jquery.min.js?s"></script>
+<script type="text/javascript" src="/misc/drupal.js?s"></script>
+<script type="text/javascript" src="/sites/all/modules/fbconnect/fbconnect.js?s"></script>
+<script type="text/javascript" src="/sites/all/modules/fivestar/js/fivestar.js?s"></script>
+<script type="text/javascript" src="/sites/all/modules/lightbox2/js/lightbox.js?s"></script>
+<script type="text/javascript" src="/sites/all/modules/nice_menus/nice_menus.js?s"></script>
+<script type="text/javascript" src="/misc/common.js?s"></script>
+<script type="text/javascript" src="/sites/all/modules/tableofcontents/jquery.scrollTo-min.js?s"></script>
+<script type="text/javascript" src="/sites/all/modules/tableofcontents/jquery.localscroll-min.js?s"></script>
+<script type="text/javascript" src="/sites/all/modules/tableofcontents/tableofcontents.js?s"></script>
+<script type="text/javascript" src="/sites/all/modules/codechef_recent_comments/codechef_recent_comments.js?s"></script>
+<script type="text/javascript" src="/misc/textarea.js?s"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","fbconnect":{"user_pictures":"allow","language_code":"en_US","app_id":"191217060453","debug":0,"connect_js":"document.location.protocol + '\/\/connect.facebook.net\/en_US\/all.js'","loginout_mode":"manual","invite_name":"CodeChef","fast_reg_mode":0,"fast_reg_autoname":0,"fbuid":null,"user":{"uid":"403897","fbuid":null}},"fivestar":{"titleUser":"Your rating: ","titleAverage":"Average: ","feedbackSavingVote":"Saving your vote...","feedbackVoteSaved":"Your vote has been saved.","feedbackDeletingVote":"Deleting your vote...","feedbackVoteDeleted":"Your vote has been deleted."},"lightbox2":{"rtl":0,"file_path":"\/(\\w\\w\/)sites\/default\/files","default_image":"\/sites\/all\/modules\/lightbox2\/images\/brokenimage.jpg","border_size":10,"font_color":"000","box_color":"eeedec","top_position":"","overlay_opacity":"0.8","overlay_color":"000","disable_close_click":1,"resize_sequence":0,"resize_speed":400,"fade_in_speed":400,"slide_down_speed":600,"use_alt_layout":0,"disable_resize":0,"disable_zoom":0,"force_show_nav":0,"show_caption":true,"loop_items":0,"node_link_text":"View Image Details","node_link_target":0,"image_count":"Image !current of !total","video_count":"Video !current of !total","page_count":"Page !current of !total","lite_press_x_close":"press \u003ca href=\"#\" onclick=\"hideLightbox(); return FALSE;\"\u003e\u003ckbd\u003ex\u003c\/kbd\u003e\u003c\/a\u003e to close","download_link_text":"","enable_login":false,"enable_contact":false,"keys_close":"c x 27","keys_previous":"p 37","keys_next":"n 39","keys_zoom":"z","keys_play_pause":"32","display_image_size":"original","image_node_sizes":"()","trigger_lightbox_classes":"","trigger_lightbox_group_classes":"","trigger_slideshow_classes":"","trigger_lightframe_classes":"","trigger_lightframe_group_classes":"","custom_class_handler":0,"custom_trigger_classes":"","disable_for_gallery_lists":true,"disable_for_acidfree_gallery_lists":true,"enable_acidfree_videos":true,"slideshow_interval":5000,"slideshow_automatic_start":true,"slideshow_automatic_exit":true,"show_play_pause":true,"pause_on_next_click":false,"pause_on_previous_click":true,"loop_slides":false,"iframe_width":500,"iframe_height":70,"iframe_border":1,"enable_video":0}});
+//--><!]]>
+</script>
+        <meta property="og:title" content="Rectangular Queries" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://www.codechef.com/DEC13/problems/RECTQUER" />
+        <meta property="og:image" content="http://www.codechef.com/misc/fb-chef.gif" />
+        <meta property="og:site_name" content="CodeChef" />
+        <meta property="fb:app_id" content="155442717838457" />
+
+		<script type="text/javascript">
+				</script>
+
+    </head>
+    <body  class="sidebar-right"><center>
+
+            <div id="header" class="wrapper">
+                <div class="inner-wrapper">
+                    <!-- Header -->
+                    <div id="logo-floater" class="cols-2">
+                        <a href="/" title=""><img src="/sites/all/themes/abessive/logo.png" alt="CodeChef is a non-commercial competitive programming community" id="logo" /><span></span></a>                    </div>
+                    <div class="cols-2">
+                        <div id="custom-login">
+                                <!--Hello <strong>Admin</strong>, Check your <strong><a href="">Account</a></strong> or <a href="/logout">Log Out</a>-->
+                            <div id="user-bar">
+                <div class="login-user"> 
+                    <table cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td>
+        <span>
+            Hello rayhan_ferdous! <br />
+            <a href="/users/rayhan_ferdous" title="Edit Your Account">Account</a>
+            or <a href="/logout">Log Out</a>
+        </span></td>
+                        </tr>
+                    </table>
+                </div></div>
+        <div id="facebook-login">
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <td>Login or<br>Signup with</td>
+                    <td><span class="facebook-button"><div class="fb-login-button"  size="medium" onlogin="facebook_onlogin_ready();" background="dark" v="2" scope="publish_stream, offline_access">Connect</div></span></td>
+                </tr>
+            </table>
+        </div>    
+        <div class="question-note">
+            <a href="#">
+                <span class="icon-question">Note</span>
+                <div class="tooltip">
+                    <ul>
+                        <li>Publicize your achievements on your Facebook Wall.</li>
+                        <li>Challenge your friends or ask them for help.</li>
+                    </ul>
+                </div>
+            </a>
+        </div>                        </div>
+
+                        <div id="block-nice_menus-1" class="block block-nice_menus block-header">
+  <div class="content">
+    <h2><span class="nice-menu-hide-title">Site Navigation</span></h2>    <ul class="nice-menu nice-menu-down" id="nice-menu-1"><li id="menu-302" class="menuparent menu-path-problems-easy"><a href="/problems/easy" title="">PRACTICE</a><ul><li id="menu-303" class="menu-path-problems-easy"><a href="/problems/easy" title="">Easy</a></li>
+<li id="menu-304" class="menu-path-problems-medium"><a href="/problems/medium" title="">Medium</a></li>
+<li id="menu-305" class="menu-path-problems-hard"><a href="/problems/hard" title="">Hard</a></li>
+<li id="menu-1819" class="menu-path-problems-challenge"><a href="/problems/challenge" title="">Challenge</a></li>
+<li id="menu-1376" class="menu-path-problems-extcontest"><a href="/problems/extcontest" title="">Peer</a></li>
+<li id="menu-2602" class="menu-path-problems-school"><a href="/problems/school" title="">School</a></li>
+</ul>
+</li>
+<li id="menu-309" class="menuparent menu-path-contests"><a href="/contests" title="">COMPETE</a><ul><li id="menu-2203" class="menu-path-www.codechef.com-contests"><a href="http://www.codechef.com/contests" title="">All Contests</a></li>
+<li id="menu-4539" class="menu-path-www.codechef.com-DEC13"><a href="http://www.codechef.com/DEC13" title="">December Challenge 2013</a></li>
+<li id="menu-4536" class="menu-path-www.codechef.com-LTIME06"><a href="http://www.codechef.com/LTIME06" title="">November Lunchtime 2013</a></li>
+<li id="menu-4533" class="menu-path-www.codechef.com-COOK40"><a href="http://www.codechef.com/COOK40" title="">November Cook-Off 2013</a></li>
+</ul>
+</li>
+<li id="menu-138" class="menuparent menu-path-discuss.codechef.com-"><a href="http://discuss.codechef.com/" title="">DISCUSS</a><ul><li id="menu-139" class="menu-path-discuss.codechef.com-"><a href="http://discuss.codechef.com/" title="">Forums</a></li>
+<li id="menu-140" class="menu-path-blog.codechef.com-"><a href="http://blog.codechef.com/" title="">Blog</a></li>
+<li id="menu-920" class="menu-path-wiki-"><a href="/wiki/" title="">Wiki</a></li>
+<li id="menu-2202" class="menu-path-https--www.facebook.com-CodeChef"><a href="https://www.facebook.com/CodeChef" title="">Facebook</a></li>
+<li id="menu-141" class="menu-path-www.twitter.com-codechef"><a href="http://www.twitter.com/codechef" title="">Twitter</a></li>
+</ul>
+</li>
+<li id="menu-143" class="menuparent menu-path-node-124098"><a href="/community" title="">COMMUNITY</a><ul><li id="menu-733" class="menu-path-node-157517"><a href="/hostyourcontest" title="Hosting Contest on CodeChef">Host your Contest</a></li>
+<li id="menu-2310" class="menu-path-www.codechef.com-goforgold"><a href="http://www.codechef.com/goforgold" title="">Go for Gold</a></li>
+<li id="menu-3830" class="menu-path-www.codechef.com-campus_chapter-about"><a href="http://www.codechef.com/campus_chapter/about" title="">Campus Chapter</a></li>
+</ul>
+</li>
+<li id="menu-147" class="menuparent menu-path-node-3"><a href="/help" title="">HELP</a><ul><li id="menu-643" class="menu-path-www.codechef.com-wiki-faq"><a href="http://www.codechef.com/wiki/faq" title="">Frequently Asked Questions</a></li>
+<li id="menu-710" class="menu-path-www.codechef.com-wiki-faq-problem-setters"><a href="http://www.codechef.com/wiki/faq-problem-setters" title="">FAQ for problem setters</a></li>
+<li id="menu-1389" class="menu-path-node-313543"><a href="/problemsetting" title="Codechef Problem Creation">Problem Setting</a></li>
+<li id="menu-850" class="menu-path-www.codechef.com-wiki-tutorials"><a href="http://www.codechef.com/wiki/tutorials" title="">Tutorials</a></li>
+<li id="menu-2200" class="menu-path-www.codechef.com-long-ranklist-AX"><a href="http://www.codechef.com/long/ranklist/AX" title="Long contest rankings list">Long Contest Ranks</a></li>
+<li id="menu-2199" class="menu-path-www.codechef.com-short-ranklist-AX"><a href="http://www.codechef.com/short/ranklist/AX" title="Short contest rankings list">Short Contest Ranks</a></li>
+<li id="menu-1820" class="menu-path-node-503865"><a href="/event-calendar" title="Event Calendar">Event Calendar</a></li>
+<li id="menu-2372" class="menu-path-discuss.ww2.codechef.com-top-users-"><a href="http://discuss.ww2.codechef.com/top/users/" title="">Top Contributors on Discuss</a></li>
+</ul>
+</li>
+<li id="menu-150" class="menuparent menu-path-node-1"><a href="/aboutus" title="">ABOUT</a><ul><li id="menu-151" class="menu-path-node-1"><a href="/aboutus" title="">About CodeChef</a></li>
+<li id="menu-849" class="menu-path-node-178314"><a href="/team" title="Team CodeChef">Team CodeChef</a></li>
+<li id="menu-708" class="menu-path-node-157468"><a href="/press" title="Press Room">Press Room</a></li>
+<li id="menu-1312" class="menu-path-www.codechef.com-financials-"><a href="http://www.codechef.com/financials/" title="">CodeChef Financials</a></li>
+<li id="menu-1313" class="menu-path-www.codechef.com-sponsorships"><a href="http://www.codechef.com/sponsorships" title="">CodeChef Sponsorships</a></li>
+<li id="menu-709" class="menu-path-node-157470"><a href="/ceoscorner" title="CEO&#039;s Corner">CEO&#039;s Corner</a></li>
+<li id="menu-1858" class="menu-path-node-614485"><a href="/contactus" title="">Contact Us</a></li>
+<li id="menu-152" class="menu-path-www.directi.com-"><a href="http://www.directi.com/" title="">About Directi</a></li>
+</ul>
+</li>
+</ul>
+  </div>
+</div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- /HEADER -->
+            <center>
+                <table cellspacing="0" cellpadding="10" id="maintable" class="maintable">
+                    <tr>
+                        <td class="content" width="99%">
+                            <div class="wrapper" id="content-regions">
+                                <div class="inner-wrapper rounded-cr-body">
+                                    <div class="rounded-cr-header">
+                                        <div class="rounded-cr-footer">
+                                            <div id="breadcrumb"><div class="breadcrumb"><a href="/">Home</a>&nbsp;&raquo;&nbsp;<a href="/contests/">Compete</a>&nbsp;&raquo;&nbsp;<a href="/DEC13/">December Challenge 2013</a>&nbsp;&raquo;&nbsp;Rectangular Queries</div></div>
+                                            <div id="primary-colum-pad">
+                                                <div id="primary-colum-wrapper">
+                                                    <img class="content-wrapper-header" src="/sites/all/themes/abessive/images/content-wrapper-top-big.gif"/>
+                                                    <div id="problem-page">
+                                                        <div class="prob">
+                                                            <div class="primary-col-wrapper">
+                                                                                                                                                                                                                                                                                                                                <table class="pagetitle-prob" width="100%" cellspacing="0" cellpadding="0" border="0">
+                                                                    <tr>
+                                                                        <td width="55%">
+                                                                            <h1>Rectangular Queries</h1>
+                                                                            <p>Problem code: RECTQUER</p>
+																			                                                                            <fb:like send="true" width="450" show_faces="false" action="recommend" font="verdana"></fb:like>
+                                                                        </td>
+                                                                        <td>
+                                                                            <ul class="button-list">
+                                                                                <li style="display:<?php print $node->answerDisplay; ?>"><a href ="/DEC13/submit/RECTQUER">Submit</a></li>                                                                                <li><a href="/DEC13/status/RECTQUER,rayhan_ferdous">My Submissions</a></li>                                                                                <li><a href="/DEC13/status/RECTQUER">All Submissions</a></li>
+                                                                            </ul>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                                <div class="primary-colum-width-left">
+                                                                    <div id="node-4040588" class="node clear-block">
+        
+    <div class="meta">
+        
+            </div>
+
+    <div class="content">
+<h3> Read problems statements in <a target="_blank" href="http://www.codechef.com/download/translated/DEC13/mandarin/RECTQUER.pdf">Mandarin Chinese </a> and <a target="_blank" href="http://www.codechef.com/download/translated/DEC13/russian/RECTQUER.pdf">Russian</a>.</h3>
+<p>This time Chef does not want to bother you with long story, so the problem description will be as short as possible. You are given a square matrix <b>A</b>, which has <b>N</b> rows and <b>N</b> columns. Chef wants you to answer following queries: given a rectangular submatrix with upper-left corner in (<b>X<sub>1</sub></b>,  <b>Y<sub>1</sub></b>) and lower-right corner in  (<b>X<sub>2</sub></b>, <b>Y<sub>2</sub></b>), and you are to count number of disctinct elements in this submarix, i.e count number of such distinct <b>A<sub>i, j</sub></b> that (<b>X<sub>1</sub></b> <b> ≤ i ≤ </b> <b>X<sub>2</sub></b>) and (<b>Y<sub>1</sub></b> <b> ≤ j ≤ </b> <b>Y<sub>2</sub></b>). [You may assume that <b>i</b> is looping through the rows and <b>j</b> through columns]
+</p>
+<h3>Input</h3>
+<p>The first line of the input file will contain single integer <b>N</b>. Then <b>N</b> lines with <b>N</b> numbers in each follow - description of the matrix. The rows are indexed from top to bottom that is top row has index 1, and columns are indexed from left to right that is left column has index 1. There is a single integer <b>Q</b> that follows on the next line right after the matrix description - number of Chef's queries. Then <b>Q</b> queries follow. Each query is described by four integers - <b>X<sub>1</sub>, Y<sub>1</sub>, X<sub>2</sub></b>, and <b>Y<sub>2</sub></b>.</p>
+<h3>Output</h3>
+<p>Output <b>Q</b> integers, each in a separate line - answers for the queries. </p>
+<h3>Constraints</h3>
+<p><ul>
+<li>1≤<b>N</b>≤300</li>
+<li>1≤<b>Q</b>≤10<sup>5</sup></li>
+<li>1≤<b>A<sub>i, j</sub></b>≤10</li>
+<li>1≤<b>X<sub>1</sub></b>≤<b>X<sub>2</sub></b>≤<b>N</b></li>
+<li>1≤<b>Y<sub>1</sub></b>≤<b>Y<sub>2</sub></b>≤<b>N</b></li>
+</ul>
+</p>
+<h3>Example</h3>
+<pre><b>Input:</b>
+3
+1 2 3
+3 2 1
+5 6 3
+3
+1 1 2 3
+2 2 2 2
+1 1 3 3 
+
+<b>Output:</b>
+3
+1
+5
+</pre>    </div>
+    <hr />
+    <table cellspacing="0" cellpadding="0" align="left">
+        <tr>
+            <td width="14%">Author:</td>
+            <td><a href="/users/Rubanenko">Rubanenko</a></td>
+		</tr>
+						<tr>
+					<td width="14%">Tester:</td>
+					<td><a href="/users/gerald">gerald</a></td>
+				</tr>
+				                <tr>
+            <td width="14%">Tags</td>
+            <td><a class='problem-tag-small ' href='/tags/problems/Rubanenko'>
+                    Rubanenko
+                </a></td>
+        </tr>
+        		<tr>
+            <td width="14%">Date Added:</td>
+            <td>6-11-2013</td>
+        </tr>
+        <tr>
+            <td width="14%">Time Limit:</td>
+            <td>1 sec</td>
+        </tr>
+        <tr>
+            <td width="14%">Source Limit:</td>
+            <td>50000 Bytes</td>
+        </tr>
+        <tr>
+            <td width="14%">Languages:</td>
+            <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.8.1, CPP11, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAR, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td>
+        </tr>
+    </table>
+    <p style="clear:left;"><br /></p>
+    <ul class="button-list button-list-left">
+        <li style="display:block"><a href ="/DEC13/submit/RECTQUER">Submit</a></li>
+    </ul>
+    <hr />
+    <h2 style="text-decoration: none;">Comments</h2>
+</div>
+<div id="comments">
+  <a id="new"></a>
+<a id="comment-65642"></a>
+<div id="c65642" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-65642" class="active">all the number in the input</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/suiyuan">suiyuan</a></strong><span style="color:#828282"> @ 6 Dec 2013 03:30 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">all the number in the input is integers?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65652"></a>
+<div id="c65652" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-65652" class="active">can any one give explanation</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/bendakai">bendakai</a></strong><span style="color:#828282"> @ 6 Dec 2013 03:42 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">can any one give explanation for this problem ..</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65727"></a>
+<div id="c65727" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-65727" class="active">Given a matrix, find the</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/wittyceaser">wittyceaser</a></strong><span style="color:#828282"> @ 6 Dec 2013 04:21 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Given a matrix, find the number of distinct elements in the queried sub-matrix.</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65757"></a>
+<div id="c65757" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-65757" class="active">I think the 1≤Y2≤Y2≤N in the</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/stzgd">stzgd</a></strong><span style="color:#828282"> @ 6 Dec 2013 04:48 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">I think the 1≤Y2≤Y2≤N in the Constraints means 1≤Y1≤Y2≤N</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65769"></a>
+<div id="c65769" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-65769" class="active">@bendakai:
+first integer (in</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/rushabhpasad">rushabhpasad</a></strong><span style="color:#828282"> @ 6 Dec 2013 05:05 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@bendakai:
+first integer (in the example - 3) is the order of the matrix, followed by the matrix (3 x 3).
+Then the # of queries (3 in the example).
+We need to find distinct integers between
+ - (1,1) and (2,3) sub-matrix of the original one. (1, 2, 3) in the first case
+ - (2,2) and (2,2) sub-matrix of the original one. (2) in the second case
+ - (1,1) and (3,3) sub-matrix of the original one. (1, 2, 3, 5, 6) in the third case</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65882"></a>
+<div id="c65882" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-65882" class="active">Elements of the matrix are</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/sambuddha">sambuddha</a></strong><span style="color:#828282"> @ 6 Dec 2013 08:19 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Elements of the matrix are integers right??????????</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65885"></a>
+<div id="c65885" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-65885" class="active">@sambuddha yep int it is ...</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/run_time_error">run_time_error</a></strong><span style="color:#828282"> @ 6 Dec 2013 08:21 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@sambuddha yep int it is ...</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65906"></a>
+<div id="c65906" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-65906" class="active">please help me with the gap</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/kumar_ranjan">kumar_ranjan</a></strong><span style="color:#828282"> @ 6 Dec 2013 08:42 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">please help me with the gap b/w integers....is there any gap in query integers....????</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65909"></a>
+<div id="c65909" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-65909" class="active">Getting WA. Why? Can anyone</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/kristos_user">kristos_user</a></strong><span style="color:#828282"> @ 6 Dec 2013 08:51 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Getting WA. Why? Can anyone help?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65915"></a>
+<div id="c65915" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-65915" class="active">Are numbers in the matrix</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/priyanshu2501">priyanshu2501</a></strong><span style="color:#828282"> @ 6 Dec 2013 08:52 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Are numbers in the matrix only 1-10 on higher?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65927"></a>
+<div id="c65927" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-65927" class="active">I still don&#039;t get it. My</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/kristos_user">kristos_user</a></strong><span style="color:#828282"> @ 6 Dec 2013 09:03 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">I still don't get it. My solution works for all the test cases I input and still I get WA. Why?
+I had the same problem with MARBLEGF.</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65930"></a>
+<div id="c65930" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-65930" class="active">@ ashishiti
+No , its correct,</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/joudzouzou">joudzouzou</a></strong><span style="color:#828282"> @ 6 Dec 2013 09:04 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@ ashishiti
+No , its correct, 1 1 3 3 means the whole square, you have 1 2 3 5 6 are distinct
+which means answer is 5, correct.</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65936"></a>
+<div id="c65936" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-65936" class="active">Runtime error..what to</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/utshri">utshri</a></strong><span style="color:#828282"> @ 6 Dec 2013 09:15 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Runtime error..what to do.????</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65958"></a>
+<div id="c65958" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-65958" class="active">TLE why ??</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/smitshilu">smitshilu</a></strong><span style="color:#828282"> @ 6 Dec 2013 10:04 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">TLE why ??</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65976"></a>
+<div id="c65976" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-65976" class="active">Has this problem been tested</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/swapniel99">swapniel99</a></strong><span style="color:#828282"> @ 6 Dec 2013 10:20 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Has this problem been tested on python?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66009"></a>
+<div id="c66009" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-66009" class="active">o/p of all the queries should</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/pradip1jha89">pradip1jha89</a></strong><span style="color:#828282"> @ 6 Dec 2013 11:08 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">o/p of all the queries should be displayed at once or one o/p after each queries...
+please someone give me the answer, thanx</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66014"></a>
+<div id="c66014" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-66014" class="active">For those of you want to see</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/devanshug">devanshug</a></strong><span style="color:#828282"> @ 6 Dec 2013 11:11 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">For those of you want to see the limitations of Python, see <a href="http://www.codechef.com/DEC13/status/RECTQUER?language=4&amp;status=All&amp;handle=&amp;sort_by=All&amp;sorting_order=asc&amp;Submit=GO" title="http://www.codechef.com/DEC13/status/RECTQUER?language=4&amp;status=All&amp;handle=&amp;sort_by=All&amp;sorting_order=asc&amp;Submit=GO">http://www.codechef.com/DEC13/status/RECTQUER?language=4&amp;status=All&amp;hand...</a></div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66126"></a>
+<div id="c66126" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-66126" class="active">Getting TLE even after using</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/realkira001">realkira001</a></strong><span style="color:#828282"> @ 7 Dec 2013 06:18 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Getting TLE even after using fast input</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66141"></a>
+<div id="c66141" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-66141" class="active">Were the solutions rejudged?</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/parispar">parispar</a></strong><span style="color:#828282"> @ 7 Dec 2013 07:38 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Were the solutions rejudged? I had AC and it changed to TLE.</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66155"></a>
+<div id="c66155" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-66155" class="active">yesterday i got ac but when i</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/sjsupersumit">sjsupersumit</a></strong><span style="color:#828282"> @ 7 Dec 2013 09:20 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">yesterday i got ac but when i logged in  today it changed to TLE. whats happening??</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66159"></a>
+<div id="c66159" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-66159" class="active">why are solutions being</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/mayank2k11">mayank2k11</a></strong><span style="color:#828282"> @ 7 Dec 2013 10:01 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">why are solutions being rejudged? what's the new requirement? Is time limit decreased? please specify</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66171"></a>
+<div id="c66171" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-66171" class="active">The announcements says, &quot; the</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/honour_00">honour_00</a></strong><span style="color:#828282"> @ 7 Dec 2013 10:38 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">The announcements says, " the statement has been updated. ". What has changed ?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66177"></a>
+<div id="c66177" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-66177" class="active">getting time limit exceeded</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/sourabh_manit">sourabh_manit</a></strong><span style="color:#828282"> @ 7 Dec 2013 10:45 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">getting time limit exceeded please help......</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66185"></a>
+<div id="c66185" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-66185" class="active">getting time limit</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/rac_1">rac_1</a></strong><span style="color:#828282"> @ 7 Dec 2013 11:08 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">getting time limit exceeded..........
+plz help.......</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66191"></a>
+<div id="c66191" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-66191" class="active">how to reduce the</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/rac_1">rac_1</a></strong><span style="color:#828282"> @ 7 Dec 2013 11:09 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">how to reduce the complexity...........</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66204"></a>
+<div id="c66204" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-66204" class="active">tle tle...! plz help..!</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/vaibhav1809">vaibhav1809</a></strong><span style="color:#828282"> @ 7 Dec 2013 11:29 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">tle tle...! plz help..!</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66224"></a>
+<div id="c66224" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-66224" class="active">what has been updated,</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/pradip1jha89">pradip1jha89</a></strong><span style="color:#828282"> @ 7 Dec 2013 11:36 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">what has been updated, doesn't seems to be any change....
+I'm getting WA for many i/p's I have tried but couldn't find the reasons..
+plz someone advice
+thanx...</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66225"></a>
+<div id="c66225" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-66225" class="active">what has been updated,</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/pradip1jha89">pradip1jha89</a></strong><span style="color:#828282"> @ 7 Dec 2013 11:36 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">what has been updated, doesn't seems to be any change....
+I'm getting WA for many i/p's I have tried but couldn't find the reasons..
+plz someone advice
+thanx...</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66237"></a>
+<div id="c66237" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-66237" class="active">tle tle tle........what the</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/edge123">edge123</a></strong><span style="color:#828282"> @ 7 Dec 2013 11:55 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">tle tle tle........what the fish???</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66251"></a>
+<div id="c66251" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-66251" class="active">Yesterday my solution showed</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/a7i7">a7i7</a></strong><span style="color:#828282"> @ 7 Dec 2013 12:24 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Yesterday my solution showed up as "Correct answer 0.66" . But today i saw that its marked as unsolved. And getting TLE for feeding the same solution</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66276"></a>
+<div id="c66276" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-66276" class="active">TLE ??? whats this all time</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/rajatcoder11">rajatcoder11</a></strong><span style="color:#828282"> @ 7 Dec 2013 01:10 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">TLE ??? whats this all time Optimized the max. anyone could 
+Is this question  expecting something else .......</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66279"></a>
+<div id="c66279" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-66279" class="active">are  numbers between 1-10 ?</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/d1k5">d1k5</a></strong><span style="color:#828282"> @ 7 Dec 2013 01:11 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">are  numbers between 1-10 ?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66290"></a>
+<div id="c66290" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-66290" class="active">@rajatcoder11: yes this</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/ashish1294">ashish1294</a></strong><span style="color:#828282"> @ 7 Dec 2013 01:46 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@rajatcoder11: yes this question expects something else!
+
+There is no need for faster input output (although it will give much better timing) .
+
+observe that the number of queries is 10^5! Naive way of traversing each element in the given sub matrix wont work. Think in a different direction.</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66299"></a>
+<div id="c66299" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-66299" class="active">Is TLE  due to not using fast</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/sjsupersumit">sjsupersumit</a></strong><span style="color:#828282"> @ 7 Dec 2013 02:14 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Is TLE  due to not using fast or io or anything else needed  to be done</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66308"></a>
+<div id="c66308" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-66308" class="active">wa wa!! the hell douchebag</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/paramvi">paramvi</a></strong><span style="color:#828282"> @ 7 Dec 2013 02:28 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">wa wa!! the hell douchebag</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66329"></a>
+<div id="c66329" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-66329" class="active">which part of the statement</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/wadhwa94">wadhwa94</a></strong><span style="color:#828282"> @ 7 Dec 2013 03:00 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">which part of the statement is updated??</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66336"></a>
+<div id="c66336" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-66336" class="active">im getting TLE........what</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/shubhamguj">shubhamguj</a></strong><span style="color:#828282"> @ 7 Dec 2013 03:21 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">im getting TLE........what can i do to solve this????</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66339"></a>
+<div id="c66339" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-66339" class="active">question requires use of</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/yagyank">yagyank</a></strong><span style="color:#828282"> @ 7 Dec 2013 03:31 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">question requires use of heaps? or segmented trees?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66350"></a>
+<div id="c66350" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-66350" class="active">@yagyank you can solve it</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/atulsehgal">atulsehgal</a></strong><span style="color:#828282"> @ 7 Dec 2013 05:01 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@yagyank you can solve it without them as well</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66351"></a>
+<div id="c66351" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-66351" class="active">Tried everything. Getting TLE</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/Abhi160792">Abhi160792</a></strong><span style="color:#828282"> @ 7 Dec 2013 05:28 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Tried everything. Getting TLE again and again! Help someone!</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66356"></a>
+<div id="c66356" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-66356" class="active">tle tle tle tle.........help</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/sharmats28">sharmats28</a></strong><span style="color:#828282"> @ 7 Dec 2013 05:57 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">tle tle tle tle.........help help help help.......!!!!</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66361"></a>
+<div id="c66361" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-66361" class="active">tle...help me</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/shuboid">shuboid</a></strong><span style="color:#828282"> @ 7 Dec 2013 06:04 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">tle...help me</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66364"></a>
+<div id="c66364" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-66364" class="active">@Admin please check the input</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/codegambler">codegambler</a></strong><span style="color:#828282"> @ 7 Dec 2013 06:08 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@Admin please check the input is in correct format. I had to re-write same thing in c++ once more after writing it in java. java solution is giving NZEC. however same thing in C++ getting passed. I had to do same thing for 2 peoblems</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66406"></a>
+<div id="c66406" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-66406" class="active">o/p of all the queries should</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/dynamic_coder">dynamic_coder</a></strong><span style="color:#828282"> @ 7 Dec 2013 08:44 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">o/p of all the queries should be displayed at once or one o/p after each queries... please someone give me the answer, thanx!!</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66425"></a>
+<div id="c66425" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-66425" class="active">@dynamic_coder you can</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/saimadan">saimadan</a></strong><span style="color:#828282"> @ 7 Dec 2013 10:05 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@dynamic_coder you can display in either ways,you need not store answers just print them after each query</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66443"></a>
+<div id="c66443" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-66443" class="active">@admin all numbers in input</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/bencambel21">bencambel21</a></strong><span style="color:#828282"> @ 7 Dec 2013 11:22 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@admin all numbers in input array are between 1 to 10 right?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66490"></a>
+<div id="c66490" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-66490" class="active">THANKS!! This one was nice to</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/edufgf">edufgf</a></strong><span style="color:#828282"> @ 8 Dec 2013 03:56 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">THANKS!! This one was nice to code ;) Took my whole saturday but it was worth it!! thx</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66541"></a>
+<div id="c66541" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-66541" class="active">i had ac then it got changed</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/dodger">dodger</a></strong><span style="color:#828282"> @ 8 Dec 2013 11:26 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">i had ac then it got changed to tle was solution rejudged</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66557"></a>
+<div id="c66557" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-66557" class="active">ADMIN REPLY please!!...TLE</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/khanijaugagan">khanijaugagan</a></strong><span style="color:#828282"> @ 8 Dec 2013 01:51 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">ADMIN REPLY please!!...TLE ... for me tooo!!!!</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66562"></a>
+<div id="c66562" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-66562" class="active">I had an AC which changed in</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/arushigpt">arushigpt</a></strong><span style="color:#828282"> @ 8 Dec 2013 02:13 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">I had an AC which changed in TLE!! Do I need to optimize my code again or is it the server's fault? ADMIN plz reply!!!</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66563"></a>
+<div id="c66563" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-66563" class="active">It really doesn&#039;t matter how</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/aj95">aj95</a></strong><span style="color:#828282"> @ 8 Dec 2013 02:28 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">It really doesn't matter how descent approach I try, I always get a TLE :(</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66570"></a>
+<div id="c66570" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-66570" class="active">can some1 plz give a hint</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/giriraj">giriraj</a></strong><span style="color:#828282"> @ 8 Dec 2013 03:34 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">can some1 plz give a hint regarding how to deal with TLE,plzzz  ???</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66577"></a>
+<div id="c66577" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-66577" class="active">Ahh ! 2.8M codespace !</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/r0chna">r0chna</a></strong><span style="color:#828282"> @ 8 Dec 2013 03:43 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Ahh ! 2.8M codespace !</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66583"></a>
+<div id="c66583" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-66583" class="active">my code is working fine on my</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/anmolchugh19">anmolchugh19</a></strong><span style="color:#828282"> @ 8 Dec 2013 04:57 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">my code is working fine on my pc and is displaying the correct answer for all the test cases i come up with! but its still showing WA. can anyone explain??
+thanks in advance!</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66592"></a>
+<div id="c66592" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-66592" class="active">NZEC in python.. Any blank</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/aswinm">aswinm</a></strong><span style="color:#828282"> @ 8 Dec 2013 06:31 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">NZEC in python.. Any blank lines in the test cases?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66654"></a>
+<div id="c66654" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-66654" class="active">This problem is worth solving</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/raz0r">raz0r</a></strong><span style="color:#828282"> @ 9 Dec 2013 12:03 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">This problem is worth solving :) +1 to the problem setter.</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66731"></a>
+<div id="c66731" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-66731" class="active">@Rubanenko +1 to you. Good</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/tijoforyou">tijoforyou</a></strong><span style="color:#828282"> @ 9 Dec 2013 11:14 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@Rubanenko +1 to you. Good question, brother! :)</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66751"></a>
+<div id="c66751" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-66751" class="active">hey raz0r and tijforyou guys,</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/pradip1jha89">pradip1jha89</a></strong><span style="color:#828282"> @ 9 Dec 2013 12:10 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">hey raz0r and tijforyou guys, can u plz help me, i'm getting WA after many approaches. Any thing could u plz point out which may we are overluking at or any corner cases or exceeptions.
+plz luk frndz, it would be a great help.</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66801"></a>
+<div id="c66801" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/RECTQUER#comment-66801" class="active">for those who are getting</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/rsawankumar">rsawankumar</a></strong><span style="color:#828282"> @ 9 Dec 2013 03:53 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">for those who are getting TLE, try some different approach instead of iterating through given query range ((x1,y1) to (x2,y2)).</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<div class="box">
+  <h2 class="title"><hr></h2>  <div class="content"><span style="font-weight:bold;color:#777;">Need help? Post a comment. But before that please spare a moment to read the <a href="http://discuss.codechef.com/questions/855/what-kind-of-comment-should-i-post-on-the-problem-page" target="_blank">guidelines</a>.</span><form action="/comment/reply/4040588"  accept-charset="UTF-8" method="post" id="comment-form">
+<div><div class="form-item">
+ <label>Your name: </label>
+ rayhan_ferdous
+</div>
+<div class="form-item" id="edit-comment-wrapper">
+ <label for="edit-comment">Comment: <span class="form-required" title="This field is required.">*</span></label>
+ <textarea cols="60" rows="5" name="comment" id="edit-comment"  class="form-textarea resizable required"></textarea>
+</div>
+<input type="hidden" name="form_build_id" id="form-f35038adcbb09c05beff370c5694fa23" value="form-f35038adcbb09c05beff370c5694fa23"  />
+<input type="hidden" name="form_token" id="edit-form-token" value="481919a23119d62cc7edf279436dd426"  />
+<input type="hidden" name="form_id" id="edit-comment-form" value="comment_form"  />
+<input type="submit" name="op" id="edit-submit" value="Save"  class="form-submit" />
+
+</div></form>
+</div>
+</div>
+</div>
+                                                                </div>
+                                                                <div class="primary-colum-width-right">
+                                                                    <div class="content-spacer-b">
+                                                                        <div id="block-problem_status-0" class="block block-problem_status">
+  <div class="r1 t"></div><div class="r2"></div><div class="r3"></div><div class="r4"></div><div class="r5"></div>
+  <div class="content">
+        <div class="center topbox-small-1" style="margin-left:0px;"><h3>SUCCESSFUL SUBMISSIONS<h3></div><br/>
+		<div id="rankContentDiv" class="table-results maintable">
+				<p align="center"><img src="/sites/all/themes/abessive/images/ajax-loader.gif" /> Fetching successful submissions</p>
+				<input type="hidden" id="pcode" value="RECTQUER" name=   "pcode" />
+				<input type="hidden" id="ccode" value="DEC13" name=   "pcode" />
+				<input type="hidden" name="userid" id="userid" value="403897" />
+			<script type="text/javascript">
+				onload_getpage_ssubmissions("next");
+			</script>
+		</div>  </div>
+  <div class="r5"></div><div class="r4"></div><div class="r3"></div><div class="r2"></div><div class="r1 b"></div>
+</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <img class="content-wrapper-header" src="/sites/all/themes/abessive/images/content-wrapper-bootm-big.gif"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+                                    <div id="footer" class="wrapper">
+                        <!--<div class="r1 t"></div><div class="r2"></div><div class="r3"></div><div class="r4"></div><div class="r5"></div>-->
+                        <div class="content clear-block">
+                            <!-- Footer Contents -->
+                            <div id="block-block-13" class="block block-block block-header">
+  <div class="content">
+        <script language="javascript" type="text/javascript">
+function formatTime(ts) {
+  now = new Date(ts);
+ 
+  localtime = new Date();
+  hour = now.getHours();
+  min = now.getMinutes();
+  sec = now.getSeconds();
+  
+  if (min <= 9) {
+	 min = "0" + min;
+  }
+  if (sec <= 9) {
+	 sec = "0" + sec;
+  }
+  if (hour > 12) {
+	 hour = hour - 12;
+	 add = " PM";
+  } else {
+	 hour = hour;
+	 add = " AM";
+  }
+  if (hour == 12) {
+	 add = " PM";
+  }
+  if (hour == 00) {
+	 hour = "12";
+  }
+	
+  $('#server-time').html(((hour<=9) ? "0" + hour : hour) + ":" + min + ":" + sec + add);
+  
+  nextSec = (now.getTime() + 1000);
+  
+  setTimeout("formatTime("+nextSec+")", 1000);
+}
+function getDtTimeZone() 
+{
+var rightNow = new Date();
+var toDay = new Date(rightNow.getFullYear(), 0, 1, 0, 0, 0, 0);
+var temp = toDay.toGMTString();
+var date2 = new Date(temp.substring(0, temp.lastIndexOf(" ") -1));
+var stdTime = (toDay - date2) / (1000 * 60 * 60);
+return stdTime;
+}
+/*var d=new Date();
+$.ajax({
+url: '/umtza',
+type:'POST',
+data: 'umtza='+d.toString(),
+});
+*/
+</script>
+<div id="disclaimer">CodeChef is a non-commercial competitive programming community</div>
+<div class="inner-wrapper">
+<div class="cols-2">
+<div id="secondary-nav">
+<ul>
+    <li><a href="http://www.codechef.com/aboutus/">About CodeChef</a></li>
+    <li><a target="_blank" href="http://www.directi.com/">About Directi</a></li>
+    <li><a href="http://www.codechef.com/ceoscorner/">CEO's Corner</a></li>
+    <li><a href="http://www.codechef.com/c-programming">C-Programming</a></li>
+    <li><a href="http://www.codechef.com/Programming-Languages">Programming Languages</a></li>
+    <li><a href="http://www.codechef.com/contactus">Contact Us</a></li>
+</ul>
+</div>
+<div id="copyright" class="cols-2">&copy; 2009 <a style="color: rgb(0, 0, 0);" href="http://www.directi.com">Directi Group</a>.  All Rights Reserved.  CodeChef uses SPOJ &copy; by <a style="color: rgb(0, 0, 0);" href="http://www.sphere-research.com">Sphere Research Labs</a></div>
+<div id="copyright-msg">In order to report copyright violations of any kind, send in an email to <a href="mailto:copyright@codechef.com">copyright@codechef.com</a></div>
+</div>
+<div align="right" class="cols-2-right" style="float:right;">
+<div id="sponsor-strip"><a target="_blank" href="http://www.directi.com"><img alt="CodeChef a product of Directi" src="/sites/all/themes/abessive/images/footer-sponsor-strip.gif" /></a><br />
+<span>The time now is: <span id="server-time"></span></span>
+				<script language='javascript'>
+						formatTime('December 09, 2013 16:20:01');
+					</script></div>
+</div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-53602-42");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+
+
+<!-- Google Code for Visitors that do not sign-up Remarketing List -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1066618556;
+var google_conversion_language = "en";
+var google_conversion_format = "3";
+var google_conversion_color = "666666";
+var google_conversion_label = "gbUUCPTlhAIQvJ3N_AM";
+var google_conversion_value = 0;
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/1066618556/?label=gbUUCPTlhAIQvJ3N_AM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+<!-- Google Code for RM codechef Remarketing List -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 968176136;
+var google_conversion_language = "en";
+var google_conversion_format = "3";
+var google_conversion_color = "ffffff";
+var google_conversion_label = "iDk7CPDZ7wMQiOTUzQM";
+var google_conversion_value = 0;
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/968176136/?label=iDk7CPDZ7wMQiOTUzQM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+<div class='cc-footer-seo'>
+<span><a href='/'>CodeChef</a> - A Platform for Aspiring Programmers</span>
+<p>CodeChef was created as a platform to help programmers make it big in the world of algorithms, <strong>computer programming</strong> and <strong>programming contests</strong>. At CodeChef we work hard to revive the geek in you by hosting a <strong>programming contest</strong> at the start of the month and another smaller programming challenge in the middle of the month. We also aim to have training sessions and discussions related to <strong>algorithms, binary search</strong>, technicalities like <strong>array size</strong> and the likes. Apart from providing a platform for <strong>programming competitions</strong>, CodeChef also has various algorithm tutorials and forum discussions to help those who are new to the world of <strong>computer programming</strong>.</p>
+<p></p>
+<span><a href='/problems/easy'>Practice Section</a> - A Place to hone your 'Computer Programming Skills'</span>
+<p>Try your hand at one of our many practice problems and submit your solution in a language of your choice. Our <strong>programming contest</strong> judge accepts solutions in over 35+ programming languages. Preparing for coding contests were never this much fun! Receive points, and move up through the CodeChef ranks. Use our practice section to better prepare yourself for the multiple <strong>programming challenges</strong> that take place through-out the month on CodeChef. </p>
+<p></p>
+<span><a href='/contests/'>Compete</a> - Monthly Programming Contests and Cook-offs</span>
+<p>Here is where you can show off your <strong>computer programming</strong> skills. Take part in our 10 day long monthly <strong>coding contest</strong> and the shorter format Cook-off <strong>coding contest</strong>. Put yourself up for recognition and win great prizes. Our <strong>programming contests</strong> have prizes worth up to Rs.20,000 and $700lots more CodeChef goodies up for grabs. </p>
+<p></p>
+<span><a href='http://discuss.codechef.com/'>Discuss</a></span>
+<p>Are you new to <strong>computer programming</strong>? Do you need help with algorithms? Then be a part of CodeChef's Forums and interact with all our programmers - they love helping out other programmers and sharing their ideas. Have discussions around <strong>binary search, array size, branch-and-bound, Dijkstra's algorithm, Encryption algorithm</strong> and more by visiting the CodeChef Forums and Wiki section.</p>
+<p></p>
+<span><a href='/community'>CodeChef Community</a></span>
+<p>As part of our Educational initiative, we give institutes the opportunity to associate with CodeChef in the form of Campus Chapters. Hosting <strong>online programming competitions</strong> is not the only feature on CodeChef. You can also host a <strong>coding contest</strong> for your institute on CodeChef, organize an <strong>algorithm</strong> event and be a guest author on our blog. </p>
+<p></p>
+<span><a href='/goforgold'>Go For Gold</a></span>
+<p>The Go for Gold Initiative was launched about a year after CodeChef was incepted, to help prepare Indian students for the <strong>ACM ICPC</strong> World Finals competition. In the run up to the <strong>ACM ICPC</strong> competition, the Go for Gold initiative uses CodeChef as a platform to train students for the <strong>ACM ICPC</strong> competition via multiple warm up contests. As an added incentive the Go for Gold initiative is also offering over Rs.8 lacs to the Indian team that beats the 29th position at the <strong>ACM ICPC</strong> world finals. Find out more about the Go for Gold and the <strong>ACM ICPC</strong> competition <a href="/goforgold">here</a>.</p>
+</div>  </div>
+</div>
+<div id="block-block-48" class="block block-block block-header">
+  <div class="content">
+        <script type ='text/javascript' src ='/misc/jquery.cookie.js'>  </script><script type ='text/javascript' src ='/misc/notification.js'>  </script>  </div>
+</div>
+                        </div>
+                    </div>
+                                      <div id="fb-root"></div>
+      <script type="text/javascript">
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId  : '191217060453',
+            status : true, // check login status
+            cookie : true, // enable cookies to allow the server to access the session
+            xfbml  : true,
+            logging: '0',
+            channelURL: 'http://www.codechef.com/sites/all/modules/fbconnect/channel.html',
+            oauth : true
+          });
+
+          jQuery(document).trigger('fb:init');
+        };
+
+        (function() {
+          var e = document.createElement('script');
+          e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+          e.async = true;
+          document.getElementById('fb-root').appendChild(e);
+        }());
+      </script>
+<div style="display: none"><form action="/DEC13/problems/RECTQUER?destination=node%2F4040588"  accept-charset="UTF-8" method="post" id="fbconnect-autoconnect-form">
+<div><input type="submit" name="op" id="edit-connect" value="Connect"  class="form-submit" />
+<input type="hidden" name="form_build_id" id="form-7c8ea5be62082ff9b71d66e5f4338b1c" value="form-7c8ea5be62082ff9b71d66e5f4338b1c"  />
+<input type="hidden" name="form_token" id="edit-fbconnect-autoconnect-form-form-token" value="f67e23dad5a73e2e431449c7a54f378b"  />
+<input type="hidden" name="form_id" id="edit-fbconnect-autoconnect-form" value="fbconnect_autoconnect_form"  />
+
+</div></form>
+</div>            </center>
+    </body>
+</html>

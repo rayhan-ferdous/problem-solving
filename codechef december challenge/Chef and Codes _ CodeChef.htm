@@ -1,0 +1,2144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en" dir="ltr">
+    <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script>
+            (function(_,e,rr,s){_errs=[s];var c=_.onerror;_.onerror=function(){var a=arguments;_errs.push(a);
+            c&&c.apply(this,a)};var b=function(){var c=e.createElement(rr),b=e.getElementsByTagName(rr)[0];
+            c.src="//beacon.errorception.com/"+s+".js";c.async=!0;b.parentNode.insertBefore(c,b)};
+            _.addEventListener?_.addEventListener("load",b,!1):_.attachEvent("onload",b)})
+            (window,document,"script","4e7c8fce06a9ab05530008e5");
+        </script>
+
+		<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+        <title>Chef and Codes | CodeChef</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="programming, language, algorithm, contest, contester, Java, C#, Pascal, C, C++, python, ruby, caml, ocaml, perl, haskell, lisp, prolog, fortran, assembler, asembler, functional, online, judge, problem, problemset, ACM" />
+<link rel="shortcut icon" href="/misc/favicon.ico" type="image/x-icon" />
+        <link type="text/css" rel="stylesheet" media="all" href="http://www.codechef.com/sites/default/files/css/css_a5c7e3a9b2cbc13c4c1353a89331b274.css" />
+        <link rel="stylesheet" type="text/css" href="/sites/all/themes/abessive/acmkanpurproblem.css" />
+        <script type="text/javascript" src="/sites/all/modules/jquery_update/replace/jquery.min.js?s"></script>
+<script type="text/javascript" src="/misc/drupal.js?s"></script>
+<script type="text/javascript" src="/sites/all/modules/fbconnect/fbconnect.js?s"></script>
+<script type="text/javascript" src="/sites/all/modules/fivestar/js/fivestar.js?s"></script>
+<script type="text/javascript" src="/sites/all/modules/lightbox2/js/lightbox.js?s"></script>
+<script type="text/javascript" src="/sites/all/modules/nice_menus/nice_menus.js?s"></script>
+<script type="text/javascript" src="/misc/common.js?s"></script>
+<script type="text/javascript" src="/sites/all/modules/tableofcontents/jquery.scrollTo-min.js?s"></script>
+<script type="text/javascript" src="/sites/all/modules/tableofcontents/jquery.localscroll-min.js?s"></script>
+<script type="text/javascript" src="/sites/all/modules/tableofcontents/tableofcontents.js?s"></script>
+<script type="text/javascript" src="/sites/all/modules/codechef_recent_comments/codechef_recent_comments.js?s"></script>
+<script type="text/javascript" src="/misc/textarea.js?s"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","fbconnect":{"user_pictures":"allow","language_code":"en_US","app_id":"191217060453","debug":0,"connect_js":"document.location.protocol + '\/\/connect.facebook.net\/en_US\/all.js'","loginout_mode":"manual","invite_name":"CodeChef","fast_reg_mode":0,"fast_reg_autoname":0,"fbuid":null,"user":{"uid":"403897","fbuid":null}},"fivestar":{"titleUser":"Your rating: ","titleAverage":"Average: ","feedbackSavingVote":"Saving your vote...","feedbackVoteSaved":"Your vote has been saved.","feedbackDeletingVote":"Deleting your vote...","feedbackVoteDeleted":"Your vote has been deleted."},"lightbox2":{"rtl":0,"file_path":"\/(\\w\\w\/)sites\/default\/files","default_image":"\/sites\/all\/modules\/lightbox2\/images\/brokenimage.jpg","border_size":10,"font_color":"000","box_color":"eeedec","top_position":"","overlay_opacity":"0.8","overlay_color":"000","disable_close_click":1,"resize_sequence":0,"resize_speed":400,"fade_in_speed":400,"slide_down_speed":600,"use_alt_layout":0,"disable_resize":0,"disable_zoom":0,"force_show_nav":0,"show_caption":true,"loop_items":0,"node_link_text":"View Image Details","node_link_target":0,"image_count":"Image !current of !total","video_count":"Video !current of !total","page_count":"Page !current of !total","lite_press_x_close":"press \u003ca href=\"#\" onclick=\"hideLightbox(); return FALSE;\"\u003e\u003ckbd\u003ex\u003c\/kbd\u003e\u003c\/a\u003e to close","download_link_text":"","enable_login":false,"enable_contact":false,"keys_close":"c x 27","keys_previous":"p 37","keys_next":"n 39","keys_zoom":"z","keys_play_pause":"32","display_image_size":"original","image_node_sizes":"()","trigger_lightbox_classes":"","trigger_lightbox_group_classes":"","trigger_slideshow_classes":"","trigger_lightframe_classes":"","trigger_lightframe_group_classes":"","custom_class_handler":0,"custom_trigger_classes":"","disable_for_gallery_lists":true,"disable_for_acidfree_gallery_lists":true,"enable_acidfree_videos":true,"slideshow_interval":5000,"slideshow_automatic_start":true,"slideshow_automatic_exit":true,"show_play_pause":true,"pause_on_next_click":false,"pause_on_previous_click":true,"loop_slides":false,"iframe_width":500,"iframe_height":70,"iframe_border":1,"enable_video":0}});
+//--><!]]>
+</script>
+        <meta property="og:title" content="Chef and Codes" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://www.codechef.com/DEC13/problems/CHODE" />
+        <meta property="og:image" content="http://www.codechef.com/misc/fb-chef.gif" />
+        <meta property="og:site_name" content="CodeChef" />
+        <meta property="fb:app_id" content="155442717838457" />
+
+		<script type="text/javascript">
+				</script>
+
+    </head>
+    <body  class="sidebar-right"><center>
+
+            <div id="header" class="wrapper">
+                <div class="inner-wrapper">
+                    <!-- Header -->
+                    <div id="logo-floater" class="cols-2">
+                        <a href="/" title=""><img src="/sites/all/themes/abessive/logo.png" alt="CodeChef is a non-commercial competitive programming community" id="logo" /><span></span></a>                    </div>
+                    <div class="cols-2">
+                        <div id="custom-login">
+                                <!--Hello <strong>Admin</strong>, Check your <strong><a href="">Account</a></strong> or <a href="/logout">Log Out</a>-->
+                            <div id="user-bar">
+                <div class="login-user"> 
+                    <table cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td>
+        <span>
+            Hello rayhan_ferdous! <br />
+            <a href="/users/rayhan_ferdous" title="Edit Your Account">Account</a>
+            or <a href="/logout">Log Out</a>
+        </span></td>
+                        </tr>
+                    </table>
+                </div></div>
+        <div id="facebook-login">
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <td>Login or<br>Signup with</td>
+                    <td><span class="facebook-button"><div class="fb-login-button"  size="medium" onlogin="facebook_onlogin_ready();" background="dark" v="2" scope="publish_stream, offline_access">Connect</div></span></td>
+                </tr>
+            </table>
+        </div>    
+        <div class="question-note">
+            <a href="#">
+                <span class="icon-question">Note</span>
+                <div class="tooltip">
+                    <ul>
+                        <li>Publicize your achievements on your Facebook Wall.</li>
+                        <li>Challenge your friends or ask them for help.</li>
+                    </ul>
+                </div>
+            </a>
+        </div>                        </div>
+
+                        <div id="block-nice_menus-1" class="block block-nice_menus block-header">
+  <div class="content">
+    <h2><span class="nice-menu-hide-title">Site Navigation</span></h2>    <ul class="nice-menu nice-menu-down" id="nice-menu-1"><li id="menu-302" class="menuparent menu-path-problems-easy"><a href="/problems/easy" title="">PRACTICE</a><ul><li id="menu-303" class="menu-path-problems-easy"><a href="/problems/easy" title="">Easy</a></li>
+<li id="menu-304" class="menu-path-problems-medium"><a href="/problems/medium" title="">Medium</a></li>
+<li id="menu-305" class="menu-path-problems-hard"><a href="/problems/hard" title="">Hard</a></li>
+<li id="menu-1819" class="menu-path-problems-challenge"><a href="/problems/challenge" title="">Challenge</a></li>
+<li id="menu-1376" class="menu-path-problems-extcontest"><a href="/problems/extcontest" title="">Peer</a></li>
+<li id="menu-2602" class="menu-path-problems-school"><a href="/problems/school" title="">School</a></li>
+</ul>
+</li>
+<li id="menu-309" class="menuparent menu-path-contests"><a href="/contests" title="">COMPETE</a><ul><li id="menu-2203" class="menu-path-www.codechef.com-contests"><a href="http://www.codechef.com/contests" title="">All Contests</a></li>
+<li id="menu-4539" class="menu-path-www.codechef.com-DEC13"><a href="http://www.codechef.com/DEC13" title="">December Challenge 2013</a></li>
+<li id="menu-4536" class="menu-path-www.codechef.com-LTIME06"><a href="http://www.codechef.com/LTIME06" title="">November Lunchtime 2013</a></li>
+<li id="menu-4533" class="menu-path-www.codechef.com-COOK40"><a href="http://www.codechef.com/COOK40" title="">November Cook-Off 2013</a></li>
+</ul>
+</li>
+<li id="menu-138" class="menuparent menu-path-discuss.codechef.com-"><a href="http://discuss.codechef.com/" title="">DISCUSS</a><ul><li id="menu-139" class="menu-path-discuss.codechef.com-"><a href="http://discuss.codechef.com/" title="">Forums</a></li>
+<li id="menu-140" class="menu-path-blog.codechef.com-"><a href="http://blog.codechef.com/" title="">Blog</a></li>
+<li id="menu-920" class="menu-path-wiki-"><a href="/wiki/" title="">Wiki</a></li>
+<li id="menu-2202" class="menu-path-https--www.facebook.com-CodeChef"><a href="https://www.facebook.com/CodeChef" title="">Facebook</a></li>
+<li id="menu-141" class="menu-path-www.twitter.com-codechef"><a href="http://www.twitter.com/codechef" title="">Twitter</a></li>
+</ul>
+</li>
+<li id="menu-143" class="menuparent menu-path-node-124098"><a href="/community" title="">COMMUNITY</a><ul><li id="menu-733" class="menu-path-node-157517"><a href="/hostyourcontest" title="Hosting Contest on CodeChef">Host your Contest</a></li>
+<li id="menu-2310" class="menu-path-www.codechef.com-goforgold"><a href="http://www.codechef.com/goforgold" title="">Go for Gold</a></li>
+<li id="menu-3830" class="menu-path-www.codechef.com-campus_chapter-about"><a href="http://www.codechef.com/campus_chapter/about" title="">Campus Chapter</a></li>
+</ul>
+</li>
+<li id="menu-147" class="menuparent menu-path-node-3"><a href="/help" title="">HELP</a><ul><li id="menu-643" class="menu-path-www.codechef.com-wiki-faq"><a href="http://www.codechef.com/wiki/faq" title="">Frequently Asked Questions</a></li>
+<li id="menu-710" class="menu-path-www.codechef.com-wiki-faq-problem-setters"><a href="http://www.codechef.com/wiki/faq-problem-setters" title="">FAQ for problem setters</a></li>
+<li id="menu-1389" class="menu-path-node-313543"><a href="/problemsetting" title="Codechef Problem Creation">Problem Setting</a></li>
+<li id="menu-850" class="menu-path-www.codechef.com-wiki-tutorials"><a href="http://www.codechef.com/wiki/tutorials" title="">Tutorials</a></li>
+<li id="menu-2200" class="menu-path-www.codechef.com-long-ranklist-AX"><a href="http://www.codechef.com/long/ranklist/AX" title="Long contest rankings list">Long Contest Ranks</a></li>
+<li id="menu-2199" class="menu-path-www.codechef.com-short-ranklist-AX"><a href="http://www.codechef.com/short/ranklist/AX" title="Short contest rankings list">Short Contest Ranks</a></li>
+<li id="menu-1820" class="menu-path-node-503865"><a href="/event-calendar" title="Event Calendar">Event Calendar</a></li>
+<li id="menu-2372" class="menu-path-discuss.ww2.codechef.com-top-users-"><a href="http://discuss.ww2.codechef.com/top/users/" title="">Top Contributors on Discuss</a></li>
+</ul>
+</li>
+<li id="menu-150" class="menuparent menu-path-node-1"><a href="/aboutus" title="">ABOUT</a><ul><li id="menu-151" class="menu-path-node-1"><a href="/aboutus" title="">About CodeChef</a></li>
+<li id="menu-849" class="menu-path-node-178314"><a href="/team" title="Team CodeChef">Team CodeChef</a></li>
+<li id="menu-708" class="menu-path-node-157468"><a href="/press" title="Press Room">Press Room</a></li>
+<li id="menu-1312" class="menu-path-www.codechef.com-financials-"><a href="http://www.codechef.com/financials/" title="">CodeChef Financials</a></li>
+<li id="menu-1313" class="menu-path-www.codechef.com-sponsorships"><a href="http://www.codechef.com/sponsorships" title="">CodeChef Sponsorships</a></li>
+<li id="menu-709" class="menu-path-node-157470"><a href="/ceoscorner" title="CEO&#039;s Corner">CEO&#039;s Corner</a></li>
+<li id="menu-1858" class="menu-path-node-614485"><a href="/contactus" title="">Contact Us</a></li>
+<li id="menu-152" class="menu-path-www.directi.com-"><a href="http://www.directi.com/" title="">About Directi</a></li>
+</ul>
+</li>
+</ul>
+  </div>
+</div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- /HEADER -->
+            <center>
+                <table cellspacing="0" cellpadding="10" id="maintable" class="maintable">
+                    <tr>
+                        <td class="content" width="99%">
+                            <div class="wrapper" id="content-regions">
+                                <div class="inner-wrapper rounded-cr-body">
+                                    <div class="rounded-cr-header">
+                                        <div class="rounded-cr-footer">
+                                            <div id="breadcrumb"><div class="breadcrumb"><a href="/">Home</a>&nbsp;&raquo;&nbsp;<a href="/contests/">Compete</a>&nbsp;&raquo;&nbsp;<a href="/DEC13/">December Challenge 2013</a>&nbsp;&raquo;&nbsp;Chef and Codes</div></div>
+                                            <div id="primary-colum-pad">
+                                                <div id="primary-colum-wrapper">
+                                                    <img class="content-wrapper-header" src="/sites/all/themes/abessive/images/content-wrapper-top-big.gif"/>
+                                                    <div id="problem-page">
+                                                        <div class="prob">
+                                                            <div class="primary-col-wrapper">
+                                                                                                                                                                                                                                                                                                                                <table class="pagetitle-prob" width="100%" cellspacing="0" cellpadding="0" border="0">
+                                                                    <tr>
+                                                                        <td width="55%">
+                                                                            <h1>Chef and Codes</h1>
+                                                                            <p>Problem code: CHODE</p>
+																			                                                                            <fb:like send="true" width="450" show_faces="false" action="recommend" font="verdana"></fb:like>
+                                                                        </td>
+                                                                        <td>
+                                                                            <ul class="button-list">
+                                                                                <li style="display:<?php print $node->answerDisplay; ?>"><a href ="/DEC13/submit/CHODE">Submit</a></li>                                                                                <li><a href="/DEC13/status/CHODE,rayhan_ferdous">My Submissions</a></li>                                                                                <li><a href="/DEC13/status/CHODE">All Submissions</a></li>
+                                                                            </ul>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                                <div class="primary-colum-width-left">
+                                                                    <div id="node-4040559" class="node clear-block">
+        
+    <div class="meta">
+        
+            </div>
+
+    <div class="content">
+<h3> Read problems statements in <a target="_blank" href="http://www.codechef.com/download/translated/DEC13/mandarin/CHODE.pdf">Mandarin Chinese </a> and <a target="_blank" href="http://www.codechef.com/download/translated/DEC13/russian/CHODE.pdf">Russian</a>.</h3>
+<p>Once upon a time chef decided to learn encodings. And, obviously, he started with the easiest one (well, actually the easiest after Caesar cypher) – substitution cypher.<br /><br /><br />
+But very soon Chef got bored with encoding/decoding, so he started thinking how to hack this cypher.<br />
+He already knows some algorithm, which is not always correct,<br />
+but it’s sufficient for now. Here is its description.<br /><br /></p>
+<p>Imagine we know frequency sequence of English letters (this means, that letters are sorted by their frequency of appearing in English texts, in ascending order).<br />
+And let’s find frequency sequence of cyphered letters (if some of them appear equal number of times, then first in frequency sequence will be lower letter between them).<br />
+Now, using this two frequency sequences we can recover plain text. Just substitute cyphered letter with origin one, if they are at same positions in sequences. <br /><br /></p>
+<p>Now, Chef has frequency sequence of English letters and cypher text. And he asks you to recover plain text. Please, help him.<br />
+</p>
+<h3>Input</h3>
+<p>In first line number <b>T</b> is given - number of test cases. Then <b>T</b> test cases follow. Each test case consists of two lines - frequency sequence and encrypted text.</p>
+<h3>Output</h3>
+<p>For each test case you should output decrypted with the given frequency sequence text. Please note, that the case of letters should be preserved. </p>
+<h3>Constraints</h3>
+<p><ul>
+<li> <b>1</b> ≤ <b>T</b> ≤ <b>1000</b>; </li>
+<li> Length of frequency sequence is always 26; </li>
+<li> <b>1</b> ≤ length of the text ≤ <b>150000</b>; </li>
+<li> <b>1</b> ≤ sum lengths of all texts ≤ <b>150000</b>. </li>
+<li> Frequency sequence consists of all lowercase English letters. Text consists of any characters. </li>
+</ul>
+</p>
+<h3>Example</h3>
+<pre>
+<b>Input:</b>
+3
+qwrtyuipasdfgjkzxcvbnmheol
+dummy!
+bfgjklmopqrstuwxzhvnicdyea
+abcd b efgd hbi!
+qwrtyuipasdfgjkzxcvbnmheol
+Dummy!
+
+<b>Output:</b>
+hello!
+have a nice day!
+Hello!
+
+</pre>    </div>
+    <hr />
+    <table cellspacing="0" cellpadding="0" align="left">
+        <tr>
+            <td width="14%">Author:</td>
+            <td><a href="/users/witalij_hq ">witalij_hq </a></td>
+		</tr>
+						<tr>
+					<td width="14%">Tester:</td>
+					<td><a href="/users/white_king">white_king</a></td>
+				</tr>
+				                <tr>
+            <td width="14%">Tags</td>
+            <td><a class='problem-tag-small ' href='/tags/problems/witalij_hq '>
+                    witalij_hq 
+                </a></td>
+        </tr>
+        		<tr>
+            <td width="14%">Date Added:</td>
+            <td>6-10-2013</td>
+        </tr>
+        <tr>
+            <td width="14%">Time Limit:</td>
+            <td>1 sec</td>
+        </tr>
+        <tr>
+            <td width="14%">Source Limit:</td>
+            <td>50000 Bytes</td>
+        </tr>
+        <tr>
+            <td width="14%">Languages:</td>
+            <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.8.1, CPP11, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAR, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td>
+        </tr>
+    </table>
+    <p style="clear:left;"><br /></p>
+    <ul class="button-list button-list-left">
+        <li style="display:block"><a href ="/DEC13/submit/CHODE">Submit</a></li>
+    </ul>
+    <hr />
+    <h2 style="text-decoration: none;">Comments</h2>
+</div>
+<div id="comments">
+  <a id="new"></a>
+<a id="comment-65661"></a>
+<div id="c65661" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-65661" class="active">Does the encrypted text</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/alphaparticle">alphaparticle</a></strong><span style="color:#828282"> @ 6 Dec 2013 03:45 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Does the encrypted text consist of both uppercase and lowercase letters or only lowercase as shown in the test cases ?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65672"></a>
+<div id="c65672" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-65672" class="active">Very poor statement. Please</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/darkshadows">darkshadows</a></strong><span style="color:#828282"> @ 6 Dec 2013 03:52 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Very poor statement. Please modify as early as you can.
+Capital letters in text are also to be mapped and they are also to be counted while forming frequency sequence.</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65673"></a>
+<div id="c65673" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-65673" class="active">I think the statement is</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/alex3er">alex3er</a></strong><span style="color:#828282"> @ 6 Dec 2013 03:56 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">I think the statement is really incomplete...
+Even if we can guess some conditions (like not replacing non alphabetics characters by others characters) with samples, what about uppercase letters? 
+Do we count them for frequency? Do we replace them? If yes, do we replace them by lower corresponding letter or by upper corresponding letter ? 
+It will bothers me a lot to make multiples submissions just to understand what is hidden by statement and can't be guessed...</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65684"></a>
+<div id="c65684" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-65684" class="active">@darkshadows: Thanks for the</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/alex3er">alex3er</a></strong><span style="color:#828282"> @ 6 Dec 2013 03:58 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@darkshadows: Thanks for the precision But what have we to return for this input: 
+1 qwrtyuipasdfgjkzxcvbnmheol Dummy! Is the answer "Hello!" or "hello!"?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65694"></a>
+<div id="c65694" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-65694" class="active">@admin please clarify the</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/alphaparticle">alphaparticle</a></strong><span style="color:#828282"> @ 6 Dec 2013 04:02 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@admin please clarify the above mentioned doubts !!</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65723"></a>
+<div id="c65723" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-65723" class="active">@alex3er: the answer in that</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/tinchy_stryder">tinchy_stryder</a></strong><span style="color:#828282"> @ 6 Dec 2013 04:19 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@alex3er: the answer in that case would be "Hello!"
+
+@admin: please update the problem statement.</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65766"></a>
+<div id="c65766" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-65766" class="active">what is the meaning of &quot; sum</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/anshulgarg19">anshulgarg19</a></strong><span style="color:#828282"> @ 6 Dec 2013 04:56 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">what is the meaning of " sum lengths of all texts" which is mentioned  as 4th constraint?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65786"></a>
+<div id="c65786" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-65786" class="active">@darkshadows do capital</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/code_overlord">code_overlord</a></strong><span style="color:#828282"> @ 6 Dec 2013 05:58 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@darkshadows do capital letters have to be mapped separately ... i mean do they have to be counted separately and not along with their lowercase forms?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65790"></a>
+<div id="c65790" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-65790" class="active">for the first test case what</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/anurag92">anurag92</a></strong><span style="color:#828282"> @ 6 Dec 2013 06:01 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">for the first test case what will be the ans of Ddummy.....</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65796"></a>
+<div id="c65796" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-65796" class="active">In first test case what will</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/jujubi">jujubi</a></strong><span style="color:#828282"> @ 6 Dec 2013 06:09 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">In first test case what will be ans of dgmmy? still hello?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65802"></a>
+<div id="c65802" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-65802" class="active">@all if input is &quot;DumMy!&quot; for</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/shadoww">shadoww</a></strong><span style="color:#828282"> @ 6 Dec 2013 06:23 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@all if input is "DumMy!" for first case answer will be "HelLo!"</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65828"></a>
+<div id="c65828" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-65828" class="active">@shadoww : thanks :D</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/dracowane">dracowane</a></strong><span style="color:#828282"> @ 6 Dec 2013 06:40 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@shadoww : thanks :D</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65831"></a>
+<div id="c65831" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-65831" class="active">how is the frequency sequence</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/ankurgarg101">ankurgarg101</a></strong><span style="color:#828282"> @ 6 Dec 2013 06:45 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">how is the frequency sequence generated? Does it contain zeroes for letters that are not appearing in the text? And what does "Just substitute cyphered letter with origin one, if they are at same positions in sequences" mean? Can u pls explain any of the test case in detail please</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65837"></a>
+<div id="c65837" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-65837" class="active">funny problem code :P</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/spandanpathak">spandanpathak</a></strong><span style="color:#828282"> @ 6 Dec 2013 06:57 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">funny problem code :P</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65847"></a>
+<div id="c65847" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-65847" class="active">Neither are the frequencies</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/sashans13">sashans13</a></strong><span style="color:#828282"> @ 6 Dec 2013 07:32 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Neither are the frequencies explained... Is 'A' &gt; 'z' or is 'Z' &gt; 'a'?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65849"></a>
+<div id="c65849" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-65849" class="active">Is frequency of &#039;A&#039; and &#039;a&#039;</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/rishul_nsit">rishul_nsit</a></strong><span style="color:#828282"> @ 6 Dec 2013 07:33 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Is frequency of 'A' and 'a' to be counted together or separately?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65855"></a>
+<div id="c65855" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-65855" class="active">Finally got</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/sashans13">sashans13</a></strong><span style="color:#828282"> @ 6 Dec 2013 07:49 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Finally got it...
+
+@rishul_nsit yes, count it together</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65858"></a>
+<div id="c65858" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-65858" class="active">is the answer in first TC ..</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/anick_gemini">anick_gemini</a></strong><span style="color:#828282"> @ 6 Dec 2013 07:58 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">is the answer in first TC .. fr Dummy!  .. Hello! or Dello! ?? pls clarify ?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65861"></a>
+<div id="c65861" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-65861" class="active">Do we have to read text till</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/kediamanav">kediamanav</a></strong><span style="color:#828282"> @ 6 Dec 2013 08:00 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Do we have to read text till Enter(n) is pressed ? If not then when do we stop reading text input?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65868"></a>
+<div id="c65868" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-65868" class="active">@manav : till newline</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/anuraganand">anuraganand</a></strong><span style="color:#828282"> @ 6 Dec 2013 08:08 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@manav : till newline character.</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65871"></a>
+<div id="c65871" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-65871" class="active">@anurag: thanks</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/kediamanav">kediamanav</a></strong><span style="color:#828282"> @ 6 Dec 2013 08:09 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@anurag: thanks</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65957"></a>
+<div id="c65957" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-65957" class="active">The problem statement is not</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/pale_rider">pale_rider</a></strong><span style="color:#828282"> @ 6 Dec 2013 10:02 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">The problem statement is not clear enough.</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65973"></a>
+<div id="c65973" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-65973" class="active">@admin u shud also specify</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/t1g0f8b8sgresu">t1g0f8b8sgresu</a></strong><span style="color:#828282"> @ 6 Dec 2013 10:18 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@admin u shud also specify what do you mean by "all chars" in input !
+does it means only a-zA-Z or it might have inclusive other arbitarily chars as well !</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66015"></a>
+<div id="c66015" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66015" class="active">does the input string always</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/gifted">gifted</a></strong><span style="color:#828282"> @ 6 Dec 2013 11:14 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">does the input string always going to be terminated with "!" ?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66047"></a>
+<div id="c66047" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66047" class="active">Cruel PS....deduced what have</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/adb_3494">adb_3494</a></strong><span style="color:#828282"> @ 7 Dec 2013 12:19 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Cruel PS....deduced what have been asked really, from the test cases...:P</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66053"></a>
+<div id="c66053" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66053" class="active">Beautiful question</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/sp1rs">sp1rs</a></strong><span style="color:#828282"> @ 7 Dec 2013 12:51 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Beautiful question .....
+taken 5hour to solve it ...
+keep going ..</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66066"></a>
+<div id="c66066" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66066" class="active">I dont understand the problem</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/vlade087">vlade087</a></strong><span style="color:#828282"> @ 7 Dec 2013 01:19 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">I dont understand the problem I read and read againg and nothing can anyone explain?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66072"></a>
+<div id="c66072" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66072" class="active">haha funny problem code :p</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/jigneshjain25">jigneshjain25</a></strong><span style="color:#828282"> @ 7 Dec 2013 01:33 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">haha funny problem code :p</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66075"></a>
+<div id="c66075" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66075" class="active">Can some one please jus</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/realkira001">realkira001</a></strong><span style="color:#828282"> @ 7 Dec 2013 01:34 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Can some one please jus explain the problem!!!</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66086"></a>
+<div id="c66086" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66086" class="active">my linear algo is getting TLE</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/hkbharath">hkbharath</a></strong><span style="color:#828282"> @ 7 Dec 2013 01:52 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">my linear algo is getting TLE ???????</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66089"></a>
+<div id="c66089" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66089" class="active">explanation of any one of the</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/somanaik">somanaik</a></strong><span style="color:#828282"> @ 7 Dec 2013 01:58 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">explanation of any one of the TC would be appreciated ...</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66108"></a>
+<div id="c66108" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66108" class="active">@admin need some more</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/rsawankumar">rsawankumar</a></strong><span style="color:#828282"> @ 7 Dec 2013 03:34 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@admin need some more testcses..........</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66111"></a>
+<div id="c66111" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66111" class="active">Explanation:
+* Just make the</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/satyamdhar666">satyamdhar666</a></strong><span style="color:#828282"> @ 7 Dec 2013 03:42 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Explanation:
+* Just make the frequency sequence from the cyphered text ie. all letters that dont occur have 0 frequency. And the sequence is in alphabetical order for letters with same frequency.
+* Now look for each letter of cypher in the cypher text frequency sequence and just replace the cyphered letter by the letter in the same position in the frequency sequence of English. Let other characters remain same. Capital letters is what you have to think yourself.</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66135"></a>
+<div id="c66135" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66135" class="active">taken care of everything, but</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/sidsverma">sidsverma</a></strong><span style="color:#828282"> @ 7 Dec 2013 06:56 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">taken care of everything, but Wrong Answer :(
+Could the admin add some more testcases?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66158"></a>
+<div id="c66158" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66158" class="active">cipher* ;)</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/chintant93">chintant93</a></strong><span style="color:#828282"> @ 7 Dec 2013 10:01 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">cipher* ;)</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66174"></a>
+<div id="c66174" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66174" class="active">And let’s find frequency</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/jujubi">jujubi</a></strong><span style="color:#828282"> @ 7 Dec 2013 10:39 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">And let’s find frequency sequence of cyphered letters (if some of them appear equal number of times, then first in frequency sequence will be lower letter between them).. Really Important!</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66179"></a>
+<div id="c66179" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66179" class="active">why gets(string) not working</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/edge123">edge123</a></strong><span style="color:#828282"> @ 7 Dec 2013 10:54 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">why gets(string) not working could anyone illustrate how to take strings here with  multiple spaces??</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66198"></a>
+<div id="c66198" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66198" class="active">&quot;if some of them appear equal</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/codeman004">codeman004</a></strong><span style="color:#828282"> @ 7 Dec 2013 11:25 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">"if some of them appear equal number of times, then first in frequency sequence will be lower letter between them" can anyone please explain this...</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66200"></a>
+<div id="c66200" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66200" class="active">what is the expected time</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/swarnadeep saha">swarnadeep saha</a></strong><span style="color:#828282"> @ 7 Dec 2013 11:26 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">what is the expected time complexity of the algo,because my linear one is giving me TLE.. :(</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66213"></a>
+<div id="c66213" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66213" class="active">@edge in C you can use</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/nagendra085">nagendra085</a></strong><span style="color:#828282"> @ 7 Dec 2013 11:31 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@edge in C you can use scanf("\n%[^n]",string); in this case</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66219"></a>
+<div id="c66219" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66219" class="active">&quot;if some of them appear equal</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/abhishekjoshi2">abhishekjoshi2</a></strong><span style="color:#828282"> @ 7 Dec 2013 11:34 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">"if some of them appear equal number of times, then first in frequency sequence will be lower letter between them"...here does lower mean lexicographically lower, or lower as in the one that comes first in the ciphered text?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66230"></a>
+<div id="c66230" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66230" class="active">problem statement not clear!!</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/ayushrocker92">ayushrocker92</a></strong><span style="color:#828282"> @ 7 Dec 2013 11:43 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">problem statement not clear!! please explain the output of first test case.</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66233"></a>
+<div id="c66233" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66233" class="active">@nagendra that also not</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/edge123">edge123</a></strong><span style="color:#828282"> @ 7 Dec 2013 11:50 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@nagendra that also not working........frustating</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66240"></a>
+<div id="c66240" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66240" class="active">@anybody    are there only</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/shashank100">shashank100</a></strong><span style="color:#828282"> @ 7 Dec 2013 11:59 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@anybody    are there only alphabets in the cypertext or special characters there 2????</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66255"></a>
+<div id="c66255" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66255" class="active">@admin what does &#039;lower</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/rishabh_misra">rishabh_misra</a></strong><span style="color:#828282"> @ 7 Dec 2013 12:55 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@admin what does 'lower letter' means???? in 'if the frequencies are same then........'</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66266"></a>
+<div id="c66266" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66266" class="active">@edge123 Use scanf</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/gautam94">gautam94</a></strong><span style="color:#828282"> @ 7 Dec 2013 01:02 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@edge123 Use scanf ("%[^\r\n]", string);</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66272"></a>
+<div id="c66272" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66272" class="active">&quot;(if some of them appear</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/sacsachin789">sacsachin789</a></strong><span style="color:#828282"> @ 7 Dec 2013 01:05 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">"(if some of them appear equal number of times, then first in frequency sequence will be lower letter between them)"
+Which frequency sequence?
+Frequency sequence of english letters or frequency sequence of Ciphered letters.
+Can anyone please explain.</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66287"></a>
+<div id="c66287" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66287" class="active">okay i got this, it should be</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/whizcode">whizcode</a></strong><span style="color:#828282"> @ 7 Dec 2013 01:28 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">okay i got this, it should be read as: "if some of them appear equal number of times, then first in the frequency sequence (of ciphered letters) = lower letter between them (i.e. the one coming first in encrypted text)" Can everyone stop making confusions now? -_-</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66297"></a>
+<div id="c66297" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66297" class="active">@whizcode:No, actually it is</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/adi1994">adi1994</a></strong><span style="color:#828282"> @ 7 Dec 2013 02:12 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@whizcode:No, actually it is alphabetical order. And those getting WA in C, try to clear your input buffer coz fflush is not working take an extra char input...worked for me :D</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66303"></a>
+<div id="c66303" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66303" class="active">@adi1994 can you please</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/codeman004">codeman004</a></strong><span style="color:#828282"> @ 7 Dec 2013 02:25 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@adi1994 can you please explain "if some of them appear equal number of times, then first in frequency sequence will be lower letter between them"... struggling a lot...</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66309"></a>
+<div id="c66309" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66309" class="active">Arrange letters in ciphered</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/adi1994">adi1994</a></strong><span style="color:#828282"> @ 7 Dec 2013 02:37 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Arrange letters in ciphered sequence in ascending order i.e. 0 occurrence letters first then 1 and so on...and those having same no of occurrence ,arrange them in alphabetical order..</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66315"></a>
+<div id="c66315" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66315" class="active">@adi1994 tx for clearing the</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/whizcode">whizcode</a></strong><span style="color:#828282"> @ 7 Dec 2013 02:42 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@adi1994 tx for clearing the statement :) but can you please elaborate the alternative to fflush(stdin)?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66321"></a>
+<div id="c66321" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66321" class="active">@adi1994 It&#039;s not working. My</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/aj_jaswanth">aj_jaswanth</a></strong><span style="color:#828282"> @ 7 Dec 2013 02:45 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@adi1994 It's not working. My program sorts in alphabetical order. But still getting WA.</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66365"></a>
+<div id="c66365" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66365" class="active">for the first sample input,</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/juan_mata">juan_mata</a></strong><span style="color:#828282"> @ 7 Dec 2013 06:20 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">for the first sample input, isn't "ehllo!" or "oellh!" also a valid answer? how do we know that the answer is "hello!" for sure?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66375"></a>
+<div id="c66375" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66375" class="active">checked with all test</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/giriraj">giriraj</a></strong><span style="color:#828282"> @ 7 Dec 2013 06:37 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">checked with all test cases,still getting WA,plzz help,r thr any cases i am missing out ??</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66392"></a>
+<div id="c66392" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66392" class="active">getting wa ,what is the</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/gunner65">gunner65</a></strong><span style="color:#828282"> @ 7 Dec 2013 08:19 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">getting wa ,what is the buffer not being cleared problem.</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66420"></a>
+<div id="c66420" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66420" class="active">Very poor problem statement.</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/kcahdog">kcahdog</a></strong><span style="color:#828282"> @ 7 Dec 2013 09:54 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Very poor problem statement. Had to infer most of the information from the solved examples. Thank god that atleast they were decent!</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66427"></a>
+<div id="c66427" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66427" class="active">anyone please tell me what is</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/codeman004">codeman004</a></strong><span style="color:#828282"> @ 7 Dec 2013 10:08 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">anyone please tell me what is answer for
+frequency_seq=qwrtyuipasdfgjkzxcvbnmheol
+cypher_text=mheol</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66437"></a>
+<div id="c66437" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66437" class="active">Can any 1 xplain the output..</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/asvcracker007">asvcracker007</a></strong><span style="color:#828282"> @ 7 Dec 2013 11:06 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Can any 1 xplain the output..</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66439"></a>
+<div id="c66439" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66439" class="active">@asvcracker007-output is</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/giriraj">giriraj</a></strong><span style="color:#828282"> @ 7 Dec 2013 11:18 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@asvcracker007-output is explaines in comment by  satyamdhar666 @ 7 Dec 2013 03:42 AM</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66441"></a>
+<div id="c66441" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66441" class="active">still getting wa although my</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/giriraj">giriraj</a></strong><span style="color:#828282"> @ 7 Dec 2013 11:20 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">still getting wa although my code is working perfectly on ideone for all test cases,i am using gets in C and its working fine on ideone ...any help,plzz?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66448"></a>
+<div id="c66448" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66448" class="active">Consider this Condition of</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/ramakanthd92">ramakanthd92</a></strong><span style="color:#828282"> @ 7 Dec 2013 11:46 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Consider this Condition of the problem statement  "if some of them appear equal number of times, then first in frequency sequence will be lower letter between them "
+lower letter means Alphabetical order not the letter order in the encrypted text.</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66452"></a>
+<div id="c66452" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66452" class="active">getting write answer for all</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/shivee1701">shivee1701</a></strong><span style="color:#828282"> @ 8 Dec 2013 12:49 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">getting write answer for all test cases, checked boundary conditions too and still getting WA. :-|</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66457"></a>
+<div id="c66457" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66457" class="active">Ok, Congratulations!! This</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/edufgf">edufgf</a></strong><span style="color:#828282"> @ 8 Dec 2013 01:08 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Ok, Congratulations!! This was one of the worst statements I have ever read haha
+I just ignored this "(if some of them appear equal number of times, then first in frequency sequence will be lower letter between them)."
+and replaced by this from @satyamdhar666 "And the sequence is in alphabetical order for letters with same frequency."
+Good Luck.</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66465"></a>
+<div id="c66465" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66465" class="active">Worst problem</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/trsriram">trsriram</a></strong><span style="color:#828282"> @ 8 Dec 2013 01:57 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Worst problem statement........ :( atlast solved it phew :)</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66508"></a>
+<div id="c66508" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66508" class="active">problem statement just looks</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/msehgal">msehgal</a></strong><span style="color:#828282"> @ 8 Dec 2013 08:17 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">problem statement just looks like it is encrypted in some sort of logic :P</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66514"></a>
+<div id="c66514" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66514" class="active">What will be the ans for</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/warriorprince">warriorprince</a></strong><span style="color:#828282"> @ 8 Dec 2013 09:51 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">What will be the ans for "qwrtyuipasdfgjkzxcvbnmheol" and "aabbccdd". Is it "hheeooll" or "llooeehh"???</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66535"></a>
+<div id="c66535" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66535" class="active">I got correct o/p for all the</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/tapopadma">tapopadma</a></strong><span style="color:#828282"> @ 8 Dec 2013 11:10 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">I got correct o/p for all the cases individually in c++in my computer  from a day ago but when i am taking the no test cases as i/p to get o/p for all cases at a time then i am getting wrong o/p as if the test cases T is being accepted as the frequency sequence itself.. I finally need help..plz tell me how to get the ans for mutiple times...</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66538"></a>
+<div id="c66538" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66538" class="active">Are &#039;D&#039; and &#039;d&#039; different</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/chintant93">chintant93</a></strong><span style="color:#828282"> @ 8 Dec 2013 11:26 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Are 'D' and 'd' different when calculating occurrence?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66547"></a>
+<div id="c66547" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66547" class="active">I can&#039;t match the I/O for</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/emotionless">emotionless</a></strong><span style="color:#828282"> @ 8 Dec 2013 12:09 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">I can't match the I/O for last 3 days. Can anyone explain any test clearly.</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66548"></a>
+<div id="c66548" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66548" class="active">very poor problem statement</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/vikasnitt">vikasnitt</a></strong><span style="color:#828282"> @ 8 Dec 2013 12:23 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">very poor problem statement and some f***** comments made easy problem worst...</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66550"></a>
+<div id="c66550" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66550" class="active">is there any fixed way of</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/giriraj">giriraj</a></strong><span style="color:#828282"> @ 8 Dec 2013 12:35 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">is there any fixed way of taking i/o in this problem coz i am using gets and getting correct answer for all test cases on ideone,boundary conditions checked still getting WA  since last two days...plz help</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66551"></a>
+<div id="c66551" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66551" class="active">for all those getting tle ...</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/adi_prakash">adi_prakash</a></strong><span style="color:#828282"> @ 8 Dec 2013 12:35 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">for all those getting tle ... here is the solution.... use strlen only once.......(you may save its value in a variable).
+and even then if u get tle look for the use of gets().....</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66585"></a>
+<div id="c66585" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66585" class="active">@adi_prakash: Thanks a lot...</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/sambuddha">sambuddha</a></strong><span style="color:#828282"> @ 8 Dec 2013 04:57 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@adi_prakash: Thanks a lot... :) :)</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66599"></a>
+<div id="c66599" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66599" class="active">Can anyone tell the output</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/codemaniac27">codemaniac27</a></strong><span style="color:#828282"> @ 8 Dec 2013 08:34 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Can anyone tell the output for dDummy?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66603"></a>
+<div id="c66603" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66603" class="active">is dDummy will be oOhlle...or</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/codemaniac27">codemaniac27</a></strong><span style="color:#828282"> @ 8 Dec 2013 08:40 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">is dDummy will be oOhlle...or it is hMello..??</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66605"></a>
+<div id="c66605" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66605" class="active">pls can anyone explain the</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/krobin_93">krobin_93</a></strong><span style="color:#828282"> @ 8 Dec 2013 08:43 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">pls can anyone explain the decoding process.... i am not getting the language... pls try to use 1st and 2nd string instead of the terms frequency and cipher text... it will make it easy for me..... explanation of the example will do. thanks</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66628"></a>
+<div id="c66628" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66628" class="active">@codemaniac27 hHello</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/hitesh091">hitesh091</a></strong><span style="color:#828282"> @ 8 Dec 2013 10:27 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@codemaniac27 hHello</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66633"></a>
+<div id="c66633" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66633" class="active">Friends dont get confused</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/vishal71292">vishal71292</a></strong><span style="color:#828282"> @ 8 Dec 2013 10:30 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Friends dont get confused with the statement "--&gt;(if some of them appear equal number of times, then first in frequency sequence will be lower letter between them)&lt;--"
+it actually means to tell about alphabetical order</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66656"></a>
+<div id="c66656" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66656" class="active">@hitesh091 wont it be oOhlle?</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/nikhil30">nikhil30</a></strong><span style="color:#828282"> @ 9 Dec 2013 12:18 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@hitesh091 wont it be oOhlle?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66661"></a>
+<div id="c66661" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66661" class="active">@codemaniac27 @hitesh091</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/amanv24">amanv24</a></strong><span style="color:#828282"> @ 9 Dec 2013 01:07 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@codemaniac27 @hitesh091 output for dDummy would be oOhlle for the frequency sequence same as 1st test case.
+@nikhil30 yep, u got it right.:)</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66669"></a>
+<div id="c66669" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66669" class="active">guess what, i changed from</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/amanv24">amanv24</a></strong><span style="color:#828282"> @ 9 Dec 2013 01:14 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">guess what, i changed from c++ 4.3.2 to c++ 4.8.1 and got accepted....phew...:)</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66684"></a>
+<div id="c66684" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66684" class="active">AC at first attempt! And</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/sanjary">sanjary</a></strong><span style="color:#828282"> @ 9 Dec 2013 02:29 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">AC at first attempt! And Truly Funny Code!! :D</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66753"></a>
+<div id="c66753" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66753" class="active">Can anyone explain the test</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/atul_pust">atul_pust</a></strong><span style="color:#828282"> @ 9 Dec 2013 12:11 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Can anyone explain the test cases please? I can not understand the description.</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66758"></a>
+<div id="c66758" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66758" class="active">i m getting output for</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/hide_x7">hide_x7</a></strong><span style="color:#828282"> @ 9 Dec 2013 12:40 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">i m getting output for dDummy! as oOhlle!...but its still showing WA..please clarify output of dDummy!...</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66762"></a>
+<div id="c66762" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66762" class="active">what i want to now is while</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/hide_x7">hide_x7</a></strong><span style="color:#828282"> @ 9 Dec 2013 12:45 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">what i want to now is while checking occurance if d and D are considered same...</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66766"></a>
+<div id="c66766" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66766" class="active">What will be the output</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/prantoran">prantoran</a></strong><span style="color:#828282"> @ 9 Dec 2013 01:14 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">What will be the output for:::::::::::::::::::
+1 
+qwrtyuipasdfgjkzxcvbnmheol
+dduummy!</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66785"></a>
+<div id="c66785" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66785" class="active">@pratoran you are not allowed</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/rahul_nexus">rahul_nexus</a></strong><span style="color:#828282"> @ 9 Dec 2013 01:48 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@pratoran you are not allowed to ask for additional testcases...please read the rules before posting any comment.</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66794"></a>
+<div id="c66794" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/CHODE#comment-66794" class="active">Worst problem statement ever</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/arunrjit">arunrjit</a></strong><span style="color:#828282"> @ 9 Dec 2013 02:59 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Worst problem statement ever seen, even test cases are staged to create confusion.... no logic in problem</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<div class="box">
+  <h2 class="title"><hr></h2>  <div class="content"><span style="font-weight:bold;color:#777;">Need help? Post a comment. But before that please spare a moment to read the <a href="http://discuss.codechef.com/questions/855/what-kind-of-comment-should-i-post-on-the-problem-page" target="_blank">guidelines</a>.</span><form action="/comment/reply/4040559"  accept-charset="UTF-8" method="post" id="comment-form">
+<div><div class="form-item">
+ <label>Your name: </label>
+ rayhan_ferdous
+</div>
+<div class="form-item" id="edit-comment-wrapper">
+ <label for="edit-comment">Comment: <span class="form-required" title="This field is required.">*</span></label>
+ <textarea cols="60" rows="5" name="comment" id="edit-comment"  class="form-textarea resizable required"></textarea>
+</div>
+<input type="hidden" name="form_build_id" id="form-cc3e25932a289a9d4869c5eccfcbc1e8" value="form-cc3e25932a289a9d4869c5eccfcbc1e8"  />
+<input type="hidden" name="form_token" id="edit-form-token" value="5500ce9c8a7f43d094f3add0e387252f"  />
+<input type="hidden" name="form_id" id="edit-comment-form" value="comment_form"  />
+<input type="submit" name="op" id="edit-submit" value="Save"  class="form-submit" />
+
+</div></form>
+</div>
+</div>
+</div>
+                                                                </div>
+                                                                <div class="primary-colum-width-right">
+                                                                    <div class="content-spacer-b">
+                                                                        <div id="block-problem_status-0" class="block block-problem_status">
+  <div class="r1 t"></div><div class="r2"></div><div class="r3"></div><div class="r4"></div><div class="r5"></div>
+  <div class="content">
+        <div class="center topbox-small-1" style="margin-left:0px;"><h3>SUCCESSFUL SUBMISSIONS<h3></div><br/>
+		<div id="rankContentDiv" class="table-results maintable">
+				<p align="center"><img src="/sites/all/themes/abessive/images/ajax-loader.gif" /> Fetching successful submissions</p>
+				<input type="hidden" id="pcode" value="CHODE" name=   "pcode" />
+				<input type="hidden" id="ccode" value="DEC13" name=   "pcode" />
+				<input type="hidden" name="userid" id="userid" value="403897" />
+			<script type="text/javascript">
+				onload_getpage_ssubmissions("next");
+			</script>
+		</div>  </div>
+  <div class="r5"></div><div class="r4"></div><div class="r3"></div><div class="r2"></div><div class="r1 b"></div>
+</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <img class="content-wrapper-header" src="/sites/all/themes/abessive/images/content-wrapper-bootm-big.gif"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+                                    <div id="footer" class="wrapper">
+                        <!--<div class="r1 t"></div><div class="r2"></div><div class="r3"></div><div class="r4"></div><div class="r5"></div>-->
+                        <div class="content clear-block">
+                            <!-- Footer Contents -->
+                            <div id="block-block-13" class="block block-block block-header">
+  <div class="content">
+        <script language="javascript" type="text/javascript">
+function formatTime(ts) {
+  now = new Date(ts);
+ 
+  localtime = new Date();
+  hour = now.getHours();
+  min = now.getMinutes();
+  sec = now.getSeconds();
+  
+  if (min <= 9) {
+	 min = "0" + min;
+  }
+  if (sec <= 9) {
+	 sec = "0" + sec;
+  }
+  if (hour > 12) {
+	 hour = hour - 12;
+	 add = " PM";
+  } else {
+	 hour = hour;
+	 add = " AM";
+  }
+  if (hour == 12) {
+	 add = " PM";
+  }
+  if (hour == 00) {
+	 hour = "12";
+  }
+	
+  $('#server-time').html(((hour<=9) ? "0" + hour : hour) + ":" + min + ":" + sec + add);
+  
+  nextSec = (now.getTime() + 1000);
+  
+  setTimeout("formatTime("+nextSec+")", 1000);
+}
+function getDtTimeZone() 
+{
+var rightNow = new Date();
+var toDay = new Date(rightNow.getFullYear(), 0, 1, 0, 0, 0, 0);
+var temp = toDay.toGMTString();
+var date2 = new Date(temp.substring(0, temp.lastIndexOf(" ") -1));
+var stdTime = (toDay - date2) / (1000 * 60 * 60);
+return stdTime;
+}
+/*var d=new Date();
+$.ajax({
+url: '/umtza',
+type:'POST',
+data: 'umtza='+d.toString(),
+});
+*/
+</script>
+<div id="disclaimer">CodeChef is a non-commercial competitive programming community</div>
+<div class="inner-wrapper">
+<div class="cols-2">
+<div id="secondary-nav">
+<ul>
+    <li><a href="http://www.codechef.com/aboutus/">About CodeChef</a></li>
+    <li><a target="_blank" href="http://www.directi.com/">About Directi</a></li>
+    <li><a href="http://www.codechef.com/ceoscorner/">CEO's Corner</a></li>
+    <li><a href="http://www.codechef.com/c-programming">C-Programming</a></li>
+    <li><a href="http://www.codechef.com/Programming-Languages">Programming Languages</a></li>
+    <li><a href="http://www.codechef.com/contactus">Contact Us</a></li>
+</ul>
+</div>
+<div id="copyright" class="cols-2">&copy; 2009 <a style="color: rgb(0, 0, 0);" href="http://www.directi.com">Directi Group</a>.  All Rights Reserved.  CodeChef uses SPOJ &copy; by <a style="color: rgb(0, 0, 0);" href="http://www.sphere-research.com">Sphere Research Labs</a></div>
+<div id="copyright-msg">In order to report copyright violations of any kind, send in an email to <a href="mailto:copyright@codechef.com">copyright@codechef.com</a></div>
+</div>
+<div align="right" class="cols-2-right" style="float:right;">
+<div id="sponsor-strip"><a target="_blank" href="http://www.directi.com"><img alt="CodeChef a product of Directi" src="/sites/all/themes/abessive/images/footer-sponsor-strip.gif" /></a><br />
+<span>The time now is: <span id="server-time"></span></span>
+				<script language='javascript'>
+						formatTime('December 09, 2013 16:19:56');
+					</script></div>
+</div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-53602-42");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+
+
+<!-- Google Code for Visitors that do not sign-up Remarketing List -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1066618556;
+var google_conversion_language = "en";
+var google_conversion_format = "3";
+var google_conversion_color = "666666";
+var google_conversion_label = "gbUUCPTlhAIQvJ3N_AM";
+var google_conversion_value = 0;
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/1066618556/?label=gbUUCPTlhAIQvJ3N_AM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+<!-- Google Code for RM codechef Remarketing List -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 968176136;
+var google_conversion_language = "en";
+var google_conversion_format = "3";
+var google_conversion_color = "ffffff";
+var google_conversion_label = "iDk7CPDZ7wMQiOTUzQM";
+var google_conversion_value = 0;
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/968176136/?label=iDk7CPDZ7wMQiOTUzQM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+<div class='cc-footer-seo'>
+<span><a href='/'>CodeChef</a> - A Platform for Aspiring Programmers</span>
+<p>CodeChef was created as a platform to help programmers make it big in the world of algorithms, <strong>computer programming</strong> and <strong>programming contests</strong>. At CodeChef we work hard to revive the geek in you by hosting a <strong>programming contest</strong> at the start of the month and another smaller programming challenge in the middle of the month. We also aim to have training sessions and discussions related to <strong>algorithms, binary search</strong>, technicalities like <strong>array size</strong> and the likes. Apart from providing a platform for <strong>programming competitions</strong>, CodeChef also has various algorithm tutorials and forum discussions to help those who are new to the world of <strong>computer programming</strong>.</p>
+<p></p>
+<span><a href='/problems/easy'>Practice Section</a> - A Place to hone your 'Computer Programming Skills'</span>
+<p>Try your hand at one of our many practice problems and submit your solution in a language of your choice. Our <strong>programming contest</strong> judge accepts solutions in over 35+ programming languages. Preparing for coding contests were never this much fun! Receive points, and move up through the CodeChef ranks. Use our practice section to better prepare yourself for the multiple <strong>programming challenges</strong> that take place through-out the month on CodeChef. </p>
+<p></p>
+<span><a href='/contests/'>Compete</a> - Monthly Programming Contests and Cook-offs</span>
+<p>Here is where you can show off your <strong>computer programming</strong> skills. Take part in our 10 day long monthly <strong>coding contest</strong> and the shorter format Cook-off <strong>coding contest</strong>. Put yourself up for recognition and win great prizes. Our <strong>programming contests</strong> have prizes worth up to Rs.20,000 and $700lots more CodeChef goodies up for grabs. </p>
+<p></p>
+<span><a href='http://discuss.codechef.com/'>Discuss</a></span>
+<p>Are you new to <strong>computer programming</strong>? Do you need help with algorithms? Then be a part of CodeChef's Forums and interact with all our programmers - they love helping out other programmers and sharing their ideas. Have discussions around <strong>binary search, array size, branch-and-bound, Dijkstra's algorithm, Encryption algorithm</strong> and more by visiting the CodeChef Forums and Wiki section.</p>
+<p></p>
+<span><a href='/community'>CodeChef Community</a></span>
+<p>As part of our Educational initiative, we give institutes the opportunity to associate with CodeChef in the form of Campus Chapters. Hosting <strong>online programming competitions</strong> is not the only feature on CodeChef. You can also host a <strong>coding contest</strong> for your institute on CodeChef, organize an <strong>algorithm</strong> event and be a guest author on our blog. </p>
+<p></p>
+<span><a href='/goforgold'>Go For Gold</a></span>
+<p>The Go for Gold Initiative was launched about a year after CodeChef was incepted, to help prepare Indian students for the <strong>ACM ICPC</strong> World Finals competition. In the run up to the <strong>ACM ICPC</strong> competition, the Go for Gold initiative uses CodeChef as a platform to train students for the <strong>ACM ICPC</strong> competition via multiple warm up contests. As an added incentive the Go for Gold initiative is also offering over Rs.8 lacs to the Indian team that beats the 29th position at the <strong>ACM ICPC</strong> world finals. Find out more about the Go for Gold and the <strong>ACM ICPC</strong> competition <a href="/goforgold">here</a>.</p>
+</div>  </div>
+</div>
+<div id="block-block-48" class="block block-block block-header">
+  <div class="content">
+        <script type ='text/javascript' src ='/misc/jquery.cookie.js'>  </script><script type ='text/javascript' src ='/misc/notification.js'>  </script>  </div>
+</div>
+                        </div>
+                    </div>
+                                      <div id="fb-root"></div>
+      <script type="text/javascript">
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId  : '191217060453',
+            status : true, // check login status
+            cookie : true, // enable cookies to allow the server to access the session
+            xfbml  : true,
+            logging: '0',
+            channelURL: 'http://www.codechef.com/sites/all/modules/fbconnect/channel.html',
+            oauth : true
+          });
+
+          jQuery(document).trigger('fb:init');
+        };
+
+        (function() {
+          var e = document.createElement('script');
+          e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+          e.async = true;
+          document.getElementById('fb-root').appendChild(e);
+        }());
+      </script>
+<div style="display: none"><form action="/DEC13/problems/CHODE?destination=node%2F4040559"  accept-charset="UTF-8" method="post" id="fbconnect-autoconnect-form">
+<div><input type="submit" name="op" id="edit-connect" value="Connect"  class="form-submit" />
+<input type="hidden" name="form_build_id" id="form-e61dae969e7aa6c3e0534316806f9a6f" value="form-e61dae969e7aa6c3e0534316806f9a6f"  />
+<input type="hidden" name="form_token" id="edit-fbconnect-autoconnect-form-form-token" value="f67e23dad5a73e2e431449c7a54f378b"  />
+<input type="hidden" name="form_id" id="edit-fbconnect-autoconnect-form" value="fbconnect_autoconnect_form"  />
+
+</div></form>
+</div>            </center>
+    </body>
+</html>

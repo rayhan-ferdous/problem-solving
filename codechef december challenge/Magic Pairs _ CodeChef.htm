@@ -1,0 +1,1892 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en" dir="ltr">
+    <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script>
+            (function(_,e,rr,s){_errs=[s];var c=_.onerror;_.onerror=function(){var a=arguments;_errs.push(a);
+            c&&c.apply(this,a)};var b=function(){var c=e.createElement(rr),b=e.getElementsByTagName(rr)[0];
+            c.src="//beacon.errorception.com/"+s+".js";c.async=!0;b.parentNode.insertBefore(c,b)};
+            _.addEventListener?_.addEventListener("load",b,!1):_.attachEvent("onload",b)})
+            (window,document,"script","4e7c8fce06a9ab05530008e5");
+        </script>
+
+		<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+        <title>Magic Pairs | CodeChef</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="programming, language, algorithm, contest, contester, Java, C#, Pascal, C, C++, python, ruby, caml, ocaml, perl, haskell, lisp, prolog, fortran, assembler, asembler, functional, online, judge, problem, problemset, ACM" />
+<link rel="shortcut icon" href="/misc/favicon.ico" type="image/x-icon" />
+        <link type="text/css" rel="stylesheet" media="all" href="http://www.codechef.com/sites/default/files/css/css_a5c7e3a9b2cbc13c4c1353a89331b274.css" />
+        <link rel="stylesheet" type="text/css" href="/sites/all/themes/abessive/acmkanpurproblem.css" />
+        <script type="text/javascript" src="/sites/all/modules/jquery_update/replace/jquery.min.js?s"></script>
+<script type="text/javascript" src="/misc/drupal.js?s"></script>
+<script type="text/javascript" src="/sites/all/modules/fbconnect/fbconnect.js?s"></script>
+<script type="text/javascript" src="/sites/all/modules/fivestar/js/fivestar.js?s"></script>
+<script type="text/javascript" src="/sites/all/modules/lightbox2/js/lightbox.js?s"></script>
+<script type="text/javascript" src="/sites/all/modules/nice_menus/nice_menus.js?s"></script>
+<script type="text/javascript" src="/misc/common.js?s"></script>
+<script type="text/javascript" src="/sites/all/modules/tableofcontents/jquery.scrollTo-min.js?s"></script>
+<script type="text/javascript" src="/sites/all/modules/tableofcontents/jquery.localscroll-min.js?s"></script>
+<script type="text/javascript" src="/sites/all/modules/tableofcontents/tableofcontents.js?s"></script>
+<script type="text/javascript" src="/sites/all/modules/codechef_recent_comments/codechef_recent_comments.js?s"></script>
+<script type="text/javascript" src="/misc/textarea.js?s"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","fbconnect":{"user_pictures":"allow","language_code":"en_US","app_id":"191217060453","debug":0,"connect_js":"document.location.protocol + '\/\/connect.facebook.net\/en_US\/all.js'","loginout_mode":"manual","invite_name":"CodeChef","fast_reg_mode":0,"fast_reg_autoname":0,"fbuid":null,"user":{"uid":"403897","fbuid":null}},"fivestar":{"titleUser":"Your rating: ","titleAverage":"Average: ","feedbackSavingVote":"Saving your vote...","feedbackVoteSaved":"Your vote has been saved.","feedbackDeletingVote":"Deleting your vote...","feedbackVoteDeleted":"Your vote has been deleted."},"lightbox2":{"rtl":0,"file_path":"\/(\\w\\w\/)sites\/default\/files","default_image":"\/sites\/all\/modules\/lightbox2\/images\/brokenimage.jpg","border_size":10,"font_color":"000","box_color":"eeedec","top_position":"","overlay_opacity":"0.8","overlay_color":"000","disable_close_click":1,"resize_sequence":0,"resize_speed":400,"fade_in_speed":400,"slide_down_speed":600,"use_alt_layout":0,"disable_resize":0,"disable_zoom":0,"force_show_nav":0,"show_caption":true,"loop_items":0,"node_link_text":"View Image Details","node_link_target":0,"image_count":"Image !current of !total","video_count":"Video !current of !total","page_count":"Page !current of !total","lite_press_x_close":"press \u003ca href=\"#\" onclick=\"hideLightbox(); return FALSE;\"\u003e\u003ckbd\u003ex\u003c\/kbd\u003e\u003c\/a\u003e to close","download_link_text":"","enable_login":false,"enable_contact":false,"keys_close":"c x 27","keys_previous":"p 37","keys_next":"n 39","keys_zoom":"z","keys_play_pause":"32","display_image_size":"original","image_node_sizes":"()","trigger_lightbox_classes":"","trigger_lightbox_group_classes":"","trigger_slideshow_classes":"","trigger_lightframe_classes":"","trigger_lightframe_group_classes":"","custom_class_handler":0,"custom_trigger_classes":"","disable_for_gallery_lists":true,"disable_for_acidfree_gallery_lists":true,"enable_acidfree_videos":true,"slideshow_interval":5000,"slideshow_automatic_start":true,"slideshow_automatic_exit":true,"show_play_pause":true,"pause_on_next_click":false,"pause_on_previous_click":true,"loop_slides":false,"iframe_width":500,"iframe_height":70,"iframe_border":1,"enable_video":0}});
+//--><!]]>
+</script>
+        <meta property="og:title" content="Magic Pairs" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://www.codechef.com/DEC13/problems/ALEXNUMB" />
+        <meta property="og:image" content="http://www.codechef.com/misc/fb-chef.gif" />
+        <meta property="og:site_name" content="CodeChef" />
+        <meta property="fb:app_id" content="155442717838457" />
+
+		<script type="text/javascript">
+				</script>
+
+    </head>
+    <body  class="sidebar-right"><center>
+
+            <div id="header" class="wrapper">
+                <div class="inner-wrapper">
+                    <!-- Header -->
+                    <div id="logo-floater" class="cols-2">
+                        <a href="/" title=""><img src="/sites/all/themes/abessive/logo.png" alt="CodeChef is a non-commercial competitive programming community" id="logo" /><span></span></a>                    </div>
+                    <div class="cols-2">
+                        <div id="custom-login">
+                                <!--Hello <strong>Admin</strong>, Check your <strong><a href="">Account</a></strong> or <a href="/logout">Log Out</a>-->
+                            <div id="user-bar">
+                <div class="login-user"> 
+                    <table cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td>
+        <span>
+            Hello rayhan_ferdous! <br />
+            <a href="/users/rayhan_ferdous" title="Edit Your Account">Account</a>
+            or <a href="/logout">Log Out</a>
+        </span></td>
+                        </tr>
+                    </table>
+                </div></div>
+        <div id="facebook-login">
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <td>Login or<br>Signup with</td>
+                    <td><span class="facebook-button"><div class="fb-login-button"  size="medium" onlogin="facebook_onlogin_ready();" background="dark" v="2" scope="publish_stream, offline_access">Connect</div></span></td>
+                </tr>
+            </table>
+        </div>    
+        <div class="question-note">
+            <a href="#">
+                <span class="icon-question">Note</span>
+                <div class="tooltip">
+                    <ul>
+                        <li>Publicize your achievements on your Facebook Wall.</li>
+                        <li>Challenge your friends or ask them for help.</li>
+                    </ul>
+                </div>
+            </a>
+        </div>                        </div>
+
+                        <div id="block-nice_menus-1" class="block block-nice_menus block-header">
+  <div class="content">
+    <h2><span class="nice-menu-hide-title">Site Navigation</span></h2>    <ul class="nice-menu nice-menu-down" id="nice-menu-1"><li id="menu-302" class="menuparent menu-path-problems-easy"><a href="/problems/easy" title="">PRACTICE</a><ul><li id="menu-303" class="menu-path-problems-easy"><a href="/problems/easy" title="">Easy</a></li>
+<li id="menu-304" class="menu-path-problems-medium"><a href="/problems/medium" title="">Medium</a></li>
+<li id="menu-305" class="menu-path-problems-hard"><a href="/problems/hard" title="">Hard</a></li>
+<li id="menu-1819" class="menu-path-problems-challenge"><a href="/problems/challenge" title="">Challenge</a></li>
+<li id="menu-1376" class="menu-path-problems-extcontest"><a href="/problems/extcontest" title="">Peer</a></li>
+<li id="menu-2602" class="menu-path-problems-school"><a href="/problems/school" title="">School</a></li>
+</ul>
+</li>
+<li id="menu-309" class="menuparent menu-path-contests"><a href="/contests" title="">COMPETE</a><ul><li id="menu-2203" class="menu-path-www.codechef.com-contests"><a href="http://www.codechef.com/contests" title="">All Contests</a></li>
+<li id="menu-4539" class="menu-path-www.codechef.com-DEC13"><a href="http://www.codechef.com/DEC13" title="">December Challenge 2013</a></li>
+<li id="menu-4536" class="menu-path-www.codechef.com-LTIME06"><a href="http://www.codechef.com/LTIME06" title="">November Lunchtime 2013</a></li>
+<li id="menu-4533" class="menu-path-www.codechef.com-COOK40"><a href="http://www.codechef.com/COOK40" title="">November Cook-Off 2013</a></li>
+</ul>
+</li>
+<li id="menu-138" class="menuparent menu-path-discuss.codechef.com-"><a href="http://discuss.codechef.com/" title="">DISCUSS</a><ul><li id="menu-139" class="menu-path-discuss.codechef.com-"><a href="http://discuss.codechef.com/" title="">Forums</a></li>
+<li id="menu-140" class="menu-path-blog.codechef.com-"><a href="http://blog.codechef.com/" title="">Blog</a></li>
+<li id="menu-920" class="menu-path-wiki-"><a href="/wiki/" title="">Wiki</a></li>
+<li id="menu-2202" class="menu-path-https--www.facebook.com-CodeChef"><a href="https://www.facebook.com/CodeChef" title="">Facebook</a></li>
+<li id="menu-141" class="menu-path-www.twitter.com-codechef"><a href="http://www.twitter.com/codechef" title="">Twitter</a></li>
+</ul>
+</li>
+<li id="menu-143" class="menuparent menu-path-node-124098"><a href="/community" title="">COMMUNITY</a><ul><li id="menu-733" class="menu-path-node-157517"><a href="/hostyourcontest" title="Hosting Contest on CodeChef">Host your Contest</a></li>
+<li id="menu-2310" class="menu-path-www.codechef.com-goforgold"><a href="http://www.codechef.com/goforgold" title="">Go for Gold</a></li>
+<li id="menu-3830" class="menu-path-www.codechef.com-campus_chapter-about"><a href="http://www.codechef.com/campus_chapter/about" title="">Campus Chapter</a></li>
+</ul>
+</li>
+<li id="menu-147" class="menuparent menu-path-node-3"><a href="/help" title="">HELP</a><ul><li id="menu-643" class="menu-path-www.codechef.com-wiki-faq"><a href="http://www.codechef.com/wiki/faq" title="">Frequently Asked Questions</a></li>
+<li id="menu-710" class="menu-path-www.codechef.com-wiki-faq-problem-setters"><a href="http://www.codechef.com/wiki/faq-problem-setters" title="">FAQ for problem setters</a></li>
+<li id="menu-1389" class="menu-path-node-313543"><a href="/problemsetting" title="Codechef Problem Creation">Problem Setting</a></li>
+<li id="menu-850" class="menu-path-www.codechef.com-wiki-tutorials"><a href="http://www.codechef.com/wiki/tutorials" title="">Tutorials</a></li>
+<li id="menu-2200" class="menu-path-www.codechef.com-long-ranklist-AX"><a href="http://www.codechef.com/long/ranklist/AX" title="Long contest rankings list">Long Contest Ranks</a></li>
+<li id="menu-2199" class="menu-path-www.codechef.com-short-ranklist-AX"><a href="http://www.codechef.com/short/ranklist/AX" title="Short contest rankings list">Short Contest Ranks</a></li>
+<li id="menu-1820" class="menu-path-node-503865"><a href="/event-calendar" title="Event Calendar">Event Calendar</a></li>
+<li id="menu-2372" class="menu-path-discuss.ww2.codechef.com-top-users-"><a href="http://discuss.ww2.codechef.com/top/users/" title="">Top Contributors on Discuss</a></li>
+</ul>
+</li>
+<li id="menu-150" class="menuparent menu-path-node-1"><a href="/aboutus" title="">ABOUT</a><ul><li id="menu-151" class="menu-path-node-1"><a href="/aboutus" title="">About CodeChef</a></li>
+<li id="menu-849" class="menu-path-node-178314"><a href="/team" title="Team CodeChef">Team CodeChef</a></li>
+<li id="menu-708" class="menu-path-node-157468"><a href="/press" title="Press Room">Press Room</a></li>
+<li id="menu-1312" class="menu-path-www.codechef.com-financials-"><a href="http://www.codechef.com/financials/" title="">CodeChef Financials</a></li>
+<li id="menu-1313" class="menu-path-www.codechef.com-sponsorships"><a href="http://www.codechef.com/sponsorships" title="">CodeChef Sponsorships</a></li>
+<li id="menu-709" class="menu-path-node-157470"><a href="/ceoscorner" title="CEO&#039;s Corner">CEO&#039;s Corner</a></li>
+<li id="menu-1858" class="menu-path-node-614485"><a href="/contactus" title="">Contact Us</a></li>
+<li id="menu-152" class="menu-path-www.directi.com-"><a href="http://www.directi.com/" title="">About Directi</a></li>
+</ul>
+</li>
+</ul>
+  </div>
+</div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- /HEADER -->
+            <center>
+                <table cellspacing="0" cellpadding="10" id="maintable" class="maintable">
+                    <tr>
+                        <td class="content" width="99%">
+                            <div class="wrapper" id="content-regions">
+                                <div class="inner-wrapper rounded-cr-body">
+                                    <div class="rounded-cr-header">
+                                        <div class="rounded-cr-footer">
+                                            <div id="breadcrumb"><div class="breadcrumb"><a href="/">Home</a>&nbsp;&raquo;&nbsp;<a href="/contests/">Compete</a>&nbsp;&raquo;&nbsp;<a href="/DEC13/">December Challenge 2013</a>&nbsp;&raquo;&nbsp;Magic Pairs</div></div>
+                                            <div id="primary-colum-pad">
+                                                <div id="primary-colum-wrapper">
+                                                    <img class="content-wrapper-header" src="/sites/all/themes/abessive/images/content-wrapper-top-big.gif"/>
+                                                    <div id="problem-page">
+                                                        <div class="prob">
+                                                            <div class="primary-col-wrapper">
+                                                                                                                                                                                                                                                                                                                                <table class="pagetitle-prob" width="100%" cellspacing="0" cellpadding="0" border="0">
+                                                                    <tr>
+                                                                        <td width="55%">
+                                                                            <h1>Magic Pairs</h1>
+                                                                            <p>Problem code: ALEXNUMB</p>
+																			                                                                            <fb:like send="true" width="450" show_faces="false" action="recommend" font="verdana"></fb:like>
+                                                                        </td>
+                                                                        <td>
+                                                                            <ul class="button-list">
+                                                                                <li style="display:<?php print $node->answerDisplay; ?>"><a href ="/DEC13/submit/ALEXNUMB">Submit</a></li>                                                                                <li><a href="/DEC13/status/ALEXNUMB,rayhan_ferdous">My Submissions</a></li>                                                                                <li><a href="/DEC13/status/ALEXNUMB">All Submissions</a></li>
+                                                                            </ul>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                                <div class="primary-colum-width-left">
+                                                                    <div id="node-4040585" class="node clear-block">
+        
+    <div class="meta">
+        
+            </div>
+
+    <div class="content">
+<h3>Read problems statements in <a href="/download/translated/DEC13/mandarin/ALEXNUMB.pdf" target="_blank">Mandarin Chinese </a> and <a href="/download/translated/DEC13/russian/ALEXNUMB.pdf" target="_blank">Russian</a>.</h3>
+<p>Alexandra has some distinct integer numbers <b>a<sub>1</sub>,a<sub>2</sub>...a<sub>n</sub></b>.<br /> Count number of pairs <b>(i,j)</b> such that:</p>
+<li><b> 1≤ i ≤ n</b></li>
+<li><b> 1≤ j ≤ n</b></li>
+<li><b> a<sub>i</sub> &lt; a<sub>j</sub></b></li>
+<p> </p>
+<h3>Input</h3>
+<p>The first line of the input contains an integer <b>T</b> denoting the number of test cases. The description of <b>T</b> test cases follows.The first line of each test case contains a single integer <b>n</b> denoting the number of numbers Alexandra has. The second line contains <b>n</b> space-separated distinct integers <b>a<sub>1</sub></b>, <b>a<sub>2</sub></b>, ..., <b>a<sub>n</sub></b> denoting these numbers.</p>
+<p> </p>
+<h3>Output</h3>
+<p>For each test case, output a single line containing number of pairs for corresponding test case.</p>
+<p> </p>
+<h3>Constraints</h3>
+<ul>
+<li><b>1</b> ≤ <b>T</b> ≤ <b>4</b></li>
+<li><b>1</b> ≤ <b>n</b> ≤ <b>100000</b></li>
+<li><b>0</b> ≤ <b>a<sub>i</sub></b> ≤ <b>10<sup>9</sup></b></li>
+<li>All the a<sub>i</sub> are distinct </li>
+</ul>
+<p> </p>
+<h3>Example</h3>
+<pre>2
+2
+2 1
+3
+3 1 2
+</pre>
+<p><b>Output:</b></p>
+<pre>1
+3
+</pre>
+<p> </p>
+<h3>Explanation</h3>
+<p>Case 1: Only one such pair: (2,1)</p>
+<p>Case 2: 3 possible pairs: (2,1), (2,3), (3,1)</p>
+<p>.</p>    </div>
+    <hr />
+    <table cellspacing="0" cellpadding="0" align="left">
+        <tr>
+            <td width="14%">Author:</td>
+            <td><a href="/users/ballon_ziq">ballon_ziq</a></td>
+		</tr>
+						<tr>
+					<td width="14%">Tester:</td>
+					<td><a href="/users/gerald">gerald</a></td>
+				</tr>
+				                <tr>
+            <td width="14%">Tags</td>
+            <td><a class='problem-tag-small ' href='/tags/problems/ballon_ziq'>
+                    ballon_ziq
+                </a></td>
+        </tr>
+        		<tr>
+            <td width="14%">Date Added:</td>
+            <td>5-11-2013</td>
+        </tr>
+        <tr>
+            <td width="14%">Time Limit:</td>
+            <td>1 sec</td>
+        </tr>
+        <tr>
+            <td width="14%">Source Limit:</td>
+            <td>50000 Bytes</td>
+        </tr>
+        <tr>
+            <td width="14%">Languages:</td>
+            <td>ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.8.1, CPP11, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAR, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC</td>
+        </tr>
+    </table>
+    <p style="clear:left;"><br /></p>
+    <ul class="button-list button-list-left">
+        <li style="display:block"><a href ="/DEC13/submit/ALEXNUMB">Submit</a></li>
+    </ul>
+    <hr />
+    <h2 style="text-decoration: none;">Comments</h2>
+</div>
+<div id="comments">
+  <a id="new"></a>
+<a id="comment-65697"></a>
+<div id="c65697" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-65697" class="active">should i be less than j??</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/rsawankumar">rsawankumar</a></strong><span style="color:#828282"> @ 6 Dec 2013 04:04 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">should i be less than j??</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65745"></a>
+<div id="c65745" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-65745" class="active">A very good problem !</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/vravikant">vravikant</a></strong><span style="color:#828282"> @ 6 Dec 2013 04:35 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">A very good problem !</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65775"></a>
+<div id="c65775" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-65775" class="active">Some more Examples plz</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/ravitya">ravitya</a></strong><span style="color:#828282"> @ 6 Dec 2013 05:31 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Some more Examples plz</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65778"></a>
+<div id="c65778" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-65778" class="active">@shubhamguj  : try to</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/kirat_saluja">kirat_saluja</a></strong><span style="color:#828282"> @ 6 Dec 2013 05:45 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@shubhamguj  : try to optimize the solution ... removing unnecessary  loops...etc .. try to improve efficiency...</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65820"></a>
+<div id="c65820" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-65820" class="active">haha accepted on first</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/convyusboy">convyusboy</a></strong><span style="color:#828282"> @ 6 Dec 2013 06:38 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">haha accepted on first attempt, be careful for those who gets WA! ,,</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65823"></a>
+<div id="c65823" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-65823" class="active">i m getting WA but its so</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/iampkhan">iampkhan</a></strong><span style="color:#828282"> @ 6 Dec 2013 06:39 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">i m getting WA but its so easy</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65846"></a>
+<div id="c65846" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-65846" class="active">simple... do take care of</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/jamesq9">jamesq9</a></strong><span style="color:#828282"> @ 6 Dec 2013 07:14 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">simple... do take care of boundary condition guys..:)</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65853"></a>
+<div id="c65853" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-65853" class="active">@jamesq9  wht do u mean by</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/test_acnt">test_acnt</a></strong><span style="color:#828282"> @ 6 Dec 2013 07:44 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@jamesq9  wht do u mean by boundary condition ?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65856"></a>
+<div id="c65856" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-65856" class="active">Be careful while taking input</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/shrishty">shrishty</a></strong><span style="color:#828282"> @ 6 Dec 2013 07:56 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Be careful while taking input !! 
+It costed me three WA.</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65873"></a>
+<div id="c65873" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-65873" class="active">Can&#039;t believe it !!! Can</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/r1v9_3">r1v9_3</a></strong><span style="color:#828282"> @ 6 Dec 2013 08:09 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Can't believe it !!! Can Codechef problems can be so easy!!</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65874"></a>
+<div id="c65874" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-65874" class="active">@himu_d_evil: Output will be</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/saurabhgarg">saurabhgarg</a></strong><span style="color:#828282"> @ 6 Dec 2013 08:16 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@himu_d_evil: Output will be 0 :)</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65876"></a>
+<div id="c65876" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-65876" class="active">Take care of boundary cases.</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/saurabhgarg">saurabhgarg</a></strong><span style="color:#828282"> @ 6 Dec 2013 08:17 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Take care of boundary cases.</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65879"></a>
+<div id="c65879" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-65879" class="active">what boundary condition ?</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/aviraltrivedi">aviraltrivedi</a></strong><span style="color:#828282"> @ 6 Dec 2013 08:19 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">what boundary condition ?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65888"></a>
+<div id="c65888" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-65888" class="active">what should be done if it</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/reema181192">reema181192</a></strong><span style="color:#828282"> @ 6 Dec 2013 08:21 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">what should be done if it says run time error</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65892"></a>
+<div id="c65892" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-65892" class="active">hahaha, got it in just 5</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/abcdexter24">abcdexter24</a></strong><span style="color:#828282"> @ 6 Dec 2013 08:25 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">hahaha, got it in just 5 minutes... simple Q.
+@everyone read the Q carefully...</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65894"></a>
+<div id="c65894" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-65894" class="active">still WA ..somebody plz help</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/maniac87">maniac87</a></strong><span style="color:#828282"> @ 6 Dec 2013 08:27 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">still WA ..somebody plz help i've checked all boundary conditions</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65898"></a>
+<div id="c65898" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-65898" class="active">Can some one plz explain the</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/utshri">utshri</a></strong><span style="color:#828282"> @ 6 Dec 2013 08:29 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Can some one plz explain the testcases..</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65900"></a>
+<div id="c65900" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-65900" class="active">Can some one plz explain the</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/utshri">utshri</a></strong><span style="color:#828282"> @ 6 Dec 2013 08:35 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Can some one plz explain the testcases..</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65904"></a>
+<div id="c65904" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-65904" class="active">nice question</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/msehgal">msehgal</a></strong><span style="color:#828282"> @ 6 Dec 2013 08:42 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">nice question</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65916"></a>
+<div id="c65916" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-65916" class="active">@shrishty.. does that the</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/shivee1701">shivee1701</a></strong><span style="color:#828282"> @ 6 Dec 2013 08:52 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@shrishty.. does that the input cases have negative values of n? i have considered boundary cases and also included 0 for in the limit of n, still got WA.</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65939"></a>
+<div id="c65939" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-65939" class="active">if boundary condition is not</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/boomchika">boomchika</a></strong><span style="color:#828282"> @ 6 Dec 2013 09:29 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">if boundary condition is not fulfilled should the program just end or print something else like 0?
+Same question for in case the constraints dont match?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65942"></a>
+<div id="c65942" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-65942" class="active">plz clear about these</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/pranjuldb">pranjuldb</a></strong><span style="color:#828282"> @ 6 Dec 2013 09:29 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">plz clear about these "boundary conditions"</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65945"></a>
+<div id="c65945" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-65945" class="active">what is the role of these</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/arjunrana19">arjunrana19</a></strong><span style="color:#828282"> @ 6 Dec 2013 09:31 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">what is the role of these conditions : 1&lt;= i &lt;=n , 1&lt;= j &lt;=n ??</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65954"></a>
+<div id="c65954" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-65954" class="active">@guys facing trouble</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/aakashanuj">aakashanuj</a></strong><span style="color:#828282"> @ 6 Dec 2013 09:57 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@guys facing trouble regarding boundary conditions: Obviously, you need not check whether the input satisfies the constraints. It will ! This question is very very simple, school level ! Dun forget the very basics ;)</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65964"></a>
+<div id="c65964" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-65964" class="active">@aakashanuj can u plz provide</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/maniac87">maniac87</a></strong><span style="color:#828282"> @ 6 Dec 2013 10:08 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@aakashanuj can u plz provide us any critical test case</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65966"></a>
+<div id="c65966" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-65966" class="active">problem is easy those who are</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/chodu">chodu</a></strong><span style="color:#828282"> @ 6 Dec 2013 10:12 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">problem is easy those who are getting WA just use long long int :)</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65967"></a>
+<div id="c65967" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-65967" class="active">I wish there would have been</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/aakashanuj">aakashanuj</a></strong><span style="color:#828282"> @ 6 Dec 2013 10:13 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">I wish there would have been any critical case. Just think once, can there be any in such a straightforward qstn??</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65969"></a>
+<div id="c65969" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-65969" class="active">there is not any so called</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/pranjuldb">pranjuldb</a></strong><span style="color:#828282"> @ 6 Dec 2013 10:17 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">there is not any so called "boundary conditions" just take care about ""pair""..and data type you take....</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65978"></a>
+<div id="c65978" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-65978" class="active">use data type large enough to</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/prashkr">prashkr</a></strong><span style="color:#828282"> @ 6 Dec 2013 10:21 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">use data type large enough to hold the ans. There are no boundary conditions guys.</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65979"></a>
+<div id="c65979" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-65979" class="active">Wat will be the O/P for n=1</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/edorado93">edorado93</a></strong><span style="color:#828282"> @ 6 Dec 2013 10:22 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Wat will be the O/P for n=1 ??</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65985"></a>
+<div id="c65985" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-65985" class="active">@edorado93 obviously 0</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/prashkr">prashkr</a></strong><span style="color:#828282"> @ 6 Dec 2013 10:26 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@edorado93 obviously 0</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65996"></a>
+<div id="c65996" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-65996" class="active">i checked answer for n=100000</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/darkpanther">darkpanther</a></strong><span style="color:#828282"> @ 6 Dec 2013 10:56 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">i checked answer for n=100000 with my program but still getting WA :/</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-65999"></a>
+<div id="c65999" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-65999" class="active">solved in 4 lines and 1 min</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/harryi3t">harryi3t</a></strong><span style="color:#828282"> @ 6 Dec 2013 10:58 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">solved in 4 lines and 1 min :)</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66005"></a>
+<div id="c66005" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-66005" class="active">I CANT BELIEVE MY</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/darkpanther">darkpanther</a></strong><span style="color:#828282"> @ 6 Dec 2013 11:04 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">I CANT BELIEVE MY EYES
+getting WA even for this one :/</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66012"></a>
+<div id="c66012" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-66012" class="active">and i got it
+
+I am not sure</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/darkpanther">darkpanther</a></strong><span style="color:#828282"> @ 6 Dec 2013 11:09 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">and i got it
+
+I am not sure about this
+but i guess they check for a 32 bit machine and you are programming on a 64 bit machine</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66021"></a>
+<div id="c66021" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-66021" class="active">i am using long long int for</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/atulsingh7890">atulsingh7890</a></strong><span style="color:#828282"> @ 6 Dec 2013 11:30 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">i am using long long int for everything still getting WA  :(</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66024"></a>
+<div id="c66024" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-66024" class="active">plz guys help...used long</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/maniac87">maniac87</a></strong><span style="color:#828282"> @ 6 Dec 2013 11:33 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">plz guys help...used long long still too many WAs for such an easy problem..</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66026"></a>
+<div id="c66026" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-66026" class="active">very easy problem.it must be</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/amarjitaa">amarjitaa</a></strong><span style="color:#828282"> @ 6 Dec 2013 11:34 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">very easy problem.it must be put in school section</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66041"></a>
+<div id="c66041" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-66041" class="active">checked all boundary</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/hcnimkar2812">hcnimkar2812</a></strong><span style="color:#828282"> @ 7 Dec 2013 12:01 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">checked all boundary conditions. still getting WA :(</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66044"></a>
+<div id="c66044" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-66044" class="active">The constraints are</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/shubh_optimist">shubh_optimist</a></strong><span style="color:#828282"> @ 7 Dec 2013 12:10 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">The constraints are shitty,... Take n as long long</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66051"></a>
+<div id="c66051" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-66051" class="active">@shubhamguj : just think a</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/kirat_saluja">kirat_saluja</a></strong><span style="color:#828282"> @ 7 Dec 2013 12:44 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@shubhamguj : just think a little.. :D ...</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66080"></a>
+<div id="c66080" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-66080" class="active">A question which doesn&#039;t</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/satyamdhar666">satyamdhar666</a></strong><span style="color:#828282"> @ 7 Dec 2013 01:35 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">A question which doesn't belong here. Wasted my time. Too easy and too unclear.</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66084"></a>
+<div id="c66084" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-66084" class="active">if same values are coming for</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/vermatanya">vermatanya</a></strong><span style="color:#828282"> @ 7 Dec 2013 01:50 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">if same values are coming for ai then we have to exit or still count for the rest of the cases?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66090"></a>
+<div id="c66090" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-66090" class="active">I finally made the program</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/slashdk">slashdk</a></strong><span style="color:#828282"> @ 7 Dec 2013 01:59 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">I finally made the program but it's consuming 3.3 M of memory on C++ 4.3.2. How did many people get it down to 2.6? I made sure to make it as efficient as possible using \n, int for some variables. Did they use a function? If yes which one.</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66093"></a>
+<div id="c66093" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-66093" class="active">@vermatanya
+ai has all</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/slashdk">slashdk</a></strong><span style="color:#828282"> @ 7 Dec 2013 02:01 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@vermatanya
+ai has all distinct values. Test cases will not repeat any value.</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66102"></a>
+<div id="c66102" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-66102" class="active">Does any one know why is this</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/satyamdhar666">satyamdhar666</a></strong><span style="color:#828282"> @ 7 Dec 2013 03:06 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Does any one know why is this taking 2.2MB? I dont get this.</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66132"></a>
+<div id="c66132" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-66132" class="active">should take n as long</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/robin_1302">robin_1302</a></strong><span style="color:#828282"> @ 7 Dec 2013 06:52 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">should take n as long long....rest is cake walk..</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66152"></a>
+<div id="c66152" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-66152" class="active">I am getting NZEC .. what</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/avdut">avdut</a></strong><span style="color:#828282"> @ 7 Dec 2013 08:42 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">I am getting NZEC .. what kind of error there could be .. how do i test for large test cases. works fine with small cases ? Any help on how to proceed with this ?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66165"></a>
+<div id="c66165" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-66165" class="active">for those who are getting WA</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/satyamks">satyamks</a></strong><span style="color:#828282"> @ 7 Dec 2013 10:07 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">for those who are getting WA ... simply use long long int .. :D</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66194"></a>
+<div id="c66194" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-66194" class="active">Those who are getting wrong</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/atulsingh7890">atulsingh7890</a></strong><span style="color:#828282"> @ 7 Dec 2013 11:09 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Those who are getting wrong answer take care of format specifier in printf and scanf ... :) ..</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66222"></a>
+<div id="c66222" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-66222" class="active">Still can&#039;t get that why my</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/humble_fool">humble_fool</a></strong><span style="color:#828282"> @ 7 Dec 2013 11:35 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Still can't get that why my program is giving WA in C whereas same idea ran in Ruby for the first time :/</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66234"></a>
+<div id="c66234" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-66234" class="active">The question is unclear.</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/aj_jaswanth">aj_jaswanth</a></strong><span style="color:#828282"> @ 7 Dec 2013 11:51 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">The question is unclear. Using long long int solves it : )</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66242"></a>
+<div id="c66242" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-66242" class="active">use long</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/gauravkumar123">gauravkumar123</a></strong><span style="color:#828282"> @ 7 Dec 2013 12:07 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">use long</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66245"></a>
+<div id="c66245" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-66245" class="active">do take care of data types n</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/codersumit">codersumit</a></strong><span style="color:#828282"> @ 7 Dec 2013 12:15 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">do take care of data types n type casting..</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66275"></a>
+<div id="c66275" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-66275" class="active">can anyone answer me what</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/shubhamguj">shubhamguj</a></strong><span style="color:#828282"> @ 7 Dec 2013 01:07 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">can anyone answer me what will be the output if the size of the integer exceed 10^9???plzzzz......</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66318"></a>
+<div id="c66318" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-66318" class="active">@shubhamguj:refer to</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/coder_r">coder_r</a></strong><span style="color:#828282"> @ 7 Dec 2013 02:43 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@shubhamguj:refer to this--http://discuss.codechef.com/questions/313/how-to-take-big-input-in-c</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66344"></a>
+<div id="c66344" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-66344" class="active">got 4 WA due to &quot;;&quot; :D</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/aa19081995">aa19081995</a></strong><span style="color:#828282"> @ 7 Dec 2013 04:09 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">got 4 WA due to ";" :D</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66353"></a>
+<div id="c66353" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-66353" class="active">thnx guys.... format</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/noops">noops</a></strong><span style="color:#828282"> @ 7 Dec 2013 05:32 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">thnx guys.... format specifier problem was there :P..... extra easy problem</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66366"></a>
+<div id="c66366" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-66366" class="active">if a[i]=0,do we need to</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/wayfinder">wayfinder</a></strong><span style="color:#828282"> @ 7 Dec 2013 06:20 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">if a[i]=0,do we need to include it in possible formualation of pair???</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66367"></a>
+<div id="c66367" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-66367" class="active">@coder: im asking wat will be</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/shubhamguj">shubhamguj</a></strong><span style="color:#828282"> @ 7 Dec 2013 06:29 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@coder: im asking wat will be the output if the size of integer exceed 10^9.....anyone plzz help</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66381"></a>
+<div id="c66381" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-66381" class="active">hey guys i have checked the</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/happysusant33">happysusant33</a></strong><span style="color:#828282"> @ 7 Dec 2013 07:22 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">hey guys i have checked the boundary conditions as well as taken long long int....still getting WA. is it necessary to take a0,a1,a2..into consideration in calculating no of pairs???plz anyone help me...i am new to this ...</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66402"></a>
+<div id="c66402" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-66402" class="active">Yar plzzz koi meko code mail</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/shubhamguj">shubhamguj</a></strong><span style="color:#828282"> @ 7 Dec 2013 08:26 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Yar plzzz koi meko code mail kar sakta hai plzzzzz....my email id is <a href="mailto:gujarwasia.shubham@gmail.com">gujarwasia.shubham@gmail.com</a>
+plzzz i request anyone of u plzz.....mai kal se paresan huu plzzz....im new meko nai pata kya ho raha hai mere sath plzz help me...</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66405"></a>
+<div id="c66405" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-66405" class="active">can we use printf scanf it is</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/bino26">bino26</a></strong><span style="color:#828282"> @ 7 Dec 2013 08:37 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">can we use printf scanf it is showing error if we use it????</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66422"></a>
+<div id="c66422" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-66422" class="active">(2,1), (2,3), (3,1) can sum1</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/anisb">anisb</a></strong><span style="color:#828282"> @ 7 Dec 2013 09:56 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">(2,1), (2,3), (3,1) can sum1 explain this case</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66480"></a>
+<div id="c66480" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-66480" class="active">@anisb (2,1),(2,3),(3,1) </a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/suyash248">suyash248</a></strong><span style="color:#828282"> @ 8 Dec 2013 03:04 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@anisb (2,1),(2,3),(3,1)  refers to (a2,a1),(a2,a3),(a3,a1)</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66493"></a>
+<div id="c66493" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-66493" class="active">According to this problem the</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/suyash248">suyash248</a></strong><span style="color:#828282"> @ 8 Dec 2013 04:37 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">According to this problem the number of pairs should be ( n*(n-1) )/2 for each test case  irrespective of the elements (i.e. a1,a2...an). 
+Ex : suppose the elements are 5,8,2,9 then sort these element in descending order as 
+9,8,5,2  then each element can form pair with all the elements to it's left such that (ai</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66527"></a>
+<div id="c66527" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-66527" class="active">@suyash248 but its giving me</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/anisb">anisb</a></strong><span style="color:#828282"> @ 8 Dec 2013 10:38 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">@suyash248 but its giving me wrong answer for the same</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66572"></a>
+<div id="c66572" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-66572" class="active">Do I need to print</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/anch0212">anch0212</a></strong><span style="color:#828282"> @ 8 Dec 2013 03:41 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Do I need to print information in cases of wrong INPUTs , for example value of T entered as 10 should give an alert message at command prompt like "No of Test Cases should be between 1 to 4 inclusive" . ??? I am checking constraints mentioned above in my code , will it affect Execution Time ? I am getting Time Exceeded  ... 
+
+Response will be appreciated . Thanks</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66594"></a>
+<div id="c66594" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-66594" class="active">just use long long int and</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/thakshaka">thakshaka</a></strong><span style="color:#828282"> @ 8 Dec 2013 07:10 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">just use long long int and %lld
+u will get the answer</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66659"></a>
+<div id="c66659" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-66659" class="active">What is this?? A Christmas</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/sourangsu">sourangsu</a></strong><span style="color:#828282"> @ 9 Dec 2013 12:20 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">What is this?? A Christmas Gift!!!!....anyway newbies will enjoy this!!</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66700"></a>
+<div id="c66700" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-66700" class="active">good question!! (Y)</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/rjohari23">rjohari23</a></strong><span style="color:#828282"> @ 9 Dec 2013 04:44 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">good question!! (Y)</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66712"></a>
+<div id="c66712" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-66712" class="active">what is this my sol was all</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/aristotle2">aristotle2</a></strong><span style="color:#828282"> @ 9 Dec 2013 09:22 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">what is this my sol was all okie i got WA first and changed only int to ll for n i got AC why do we need to take it ll it can be adjusted well in int someebody explain</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66715"></a>
+<div id="c66715" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-66715" class="active">Can someone help me? im still</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/jecs9">jecs9</a></strong><span style="color:#828282"> @ 9 Dec 2013 09:36 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">Can someone help me? im still getting WA, Im using long long in all the inputs and output, and (N*(N-1))/2, I am getting the right results as far as I can see but still getting WA, anything else I could check?</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66748"></a>
+<div id="c66748" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-66748" class="active">can ny body tell if a[i] are</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/sujit22993">sujit22993</a></strong><span style="color:#828282"> @ 9 Dec 2013 11:57 AM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">can ny body tell if a[i] are same then what to do.....print something...or.....</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66778"></a>
+<div id="c66778" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-66778" class="active">those who are getting it</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/amit_gh">amit_gh</a></strong><span style="color:#828282"> @ 9 Dec 2013 01:43 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">those who are getting it wrong, see if your data type can accomodate the limits of ai's and n or not :)</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<a id="comment-66798"></a>
+<div id="c66798" class="comment comment-new clear-block">
+  
+  <a id="new"></a>
+  <span class="new">new</span>
+
+  <h3><a href="/DEC13/problems/ALEXNUMB#comment-66798" class="active">don&#039;t take input as string of</a></h3>
+
+  <div class="submitted">
+    <strong><a href="/users/shikhorroy">shikhorroy</a></strong><span style="color:#828282"> @ 9 Dec 2013 03:28 PM</span>  </div>
+
+  <div class="content">
+    <div class="comment-body">don't take input as string of n numbers to skip input numbers ... Use highest ranged datatype ....</div>
+      
+    <div class="comment-moderation-links"></div>
+  </div>
+  
+</div>
+<div class="box">
+  <h2 class="title"><hr></h2>  <div class="content"><span style="font-weight:bold;color:#777;">Need help? Post a comment. But before that please spare a moment to read the <a href="http://discuss.codechef.com/questions/855/what-kind-of-comment-should-i-post-on-the-problem-page" target="_blank">guidelines</a>.</span><form action="/comment/reply/4040585"  accept-charset="UTF-8" method="post" id="comment-form">
+<div><div class="form-item">
+ <label>Your name: </label>
+ rayhan_ferdous
+</div>
+<div class="form-item" id="edit-comment-wrapper">
+ <label for="edit-comment">Comment: <span class="form-required" title="This field is required.">*</span></label>
+ <textarea cols="60" rows="5" name="comment" id="edit-comment"  class="form-textarea resizable required"></textarea>
+</div>
+<input type="hidden" name="form_build_id" id="form-6041b8be452b51ab54e0ea1e3a9d9db4" value="form-6041b8be452b51ab54e0ea1e3a9d9db4"  />
+<input type="hidden" name="form_token" id="edit-form-token" value="7f9578b01576d3fc80e72357f7d44706"  />
+<input type="hidden" name="form_id" id="edit-comment-form" value="comment_form"  />
+<input type="submit" name="op" id="edit-submit" value="Save"  class="form-submit" />
+
+</div></form>
+</div>
+</div>
+</div>
+                                                                </div>
+                                                                <div class="primary-colum-width-right">
+                                                                    <div class="content-spacer-b">
+                                                                        <div id="block-problem_status-0" class="block block-problem_status">
+  <div class="r1 t"></div><div class="r2"></div><div class="r3"></div><div class="r4"></div><div class="r5"></div>
+  <div class="content">
+        <div class="center topbox-small-1" style="margin-left:0px;"><h3>SUCCESSFUL SUBMISSIONS<h3></div><br/>
+		<div id="rankContentDiv" class="table-results maintable">
+				<p align="center"><img src="/sites/all/themes/abessive/images/ajax-loader.gif" /> Fetching successful submissions</p>
+				<input type="hidden" id="pcode" value="ALEXNUMB" name=   "pcode" />
+				<input type="hidden" id="ccode" value="DEC13" name=   "pcode" />
+				<input type="hidden" name="userid" id="userid" value="403897" />
+			<script type="text/javascript">
+				onload_getpage_ssubmissions("next");
+			</script>
+		</div>  </div>
+  <div class="r5"></div><div class="r4"></div><div class="r3"></div><div class="r2"></div><div class="r1 b"></div>
+</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <img class="content-wrapper-header" src="/sites/all/themes/abessive/images/content-wrapper-bootm-big.gif"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+                                    <div id="footer" class="wrapper">
+                        <!--<div class="r1 t"></div><div class="r2"></div><div class="r3"></div><div class="r4"></div><div class="r5"></div>-->
+                        <div class="content clear-block">
+                            <!-- Footer Contents -->
+                            <div id="block-block-13" class="block block-block block-header">
+  <div class="content">
+        <script language="javascript" type="text/javascript">
+function formatTime(ts) {
+  now = new Date(ts);
+ 
+  localtime = new Date();
+  hour = now.getHours();
+  min = now.getMinutes();
+  sec = now.getSeconds();
+  
+  if (min <= 9) {
+	 min = "0" + min;
+  }
+  if (sec <= 9) {
+	 sec = "0" + sec;
+  }
+  if (hour > 12) {
+	 hour = hour - 12;
+	 add = " PM";
+  } else {
+	 hour = hour;
+	 add = " AM";
+  }
+  if (hour == 12) {
+	 add = " PM";
+  }
+  if (hour == 00) {
+	 hour = "12";
+  }
+	
+  $('#server-time').html(((hour<=9) ? "0" + hour : hour) + ":" + min + ":" + sec + add);
+  
+  nextSec = (now.getTime() + 1000);
+  
+  setTimeout("formatTime("+nextSec+")", 1000);
+}
+function getDtTimeZone() 
+{
+var rightNow = new Date();
+var toDay = new Date(rightNow.getFullYear(), 0, 1, 0, 0, 0, 0);
+var temp = toDay.toGMTString();
+var date2 = new Date(temp.substring(0, temp.lastIndexOf(" ") -1));
+var stdTime = (toDay - date2) / (1000 * 60 * 60);
+return stdTime;
+}
+/*var d=new Date();
+$.ajax({
+url: '/umtza',
+type:'POST',
+data: 'umtza='+d.toString(),
+});
+*/
+</script>
+<div id="disclaimer">CodeChef is a non-commercial competitive programming community</div>
+<div class="inner-wrapper">
+<div class="cols-2">
+<div id="secondary-nav">
+<ul>
+    <li><a href="http://www.codechef.com/aboutus/">About CodeChef</a></li>
+    <li><a target="_blank" href="http://www.directi.com/">About Directi</a></li>
+    <li><a href="http://www.codechef.com/ceoscorner/">CEO's Corner</a></li>
+    <li><a href="http://www.codechef.com/c-programming">C-Programming</a></li>
+    <li><a href="http://www.codechef.com/Programming-Languages">Programming Languages</a></li>
+    <li><a href="http://www.codechef.com/contactus">Contact Us</a></li>
+</ul>
+</div>
+<div id="copyright" class="cols-2">&copy; 2009 <a style="color: rgb(0, 0, 0);" href="http://www.directi.com">Directi Group</a>.  All Rights Reserved.  CodeChef uses SPOJ &copy; by <a style="color: rgb(0, 0, 0);" href="http://www.sphere-research.com">Sphere Research Labs</a></div>
+<div id="copyright-msg">In order to report copyright violations of any kind, send in an email to <a href="mailto:copyright@codechef.com">copyright@codechef.com</a></div>
+</div>
+<div align="right" class="cols-2-right" style="float:right;">
+<div id="sponsor-strip"><a target="_blank" href="http://www.directi.com"><img alt="CodeChef a product of Directi" src="/sites/all/themes/abessive/images/footer-sponsor-strip.gif" /></a><br />
+<span>The time now is: <span id="server-time"></span></span>
+				<script language='javascript'>
+						formatTime('December 09, 2013 16:19:25');
+					</script></div>
+</div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-53602-42");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+
+
+<!-- Google Code for Visitors that do not sign-up Remarketing List -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1066618556;
+var google_conversion_language = "en";
+var google_conversion_format = "3";
+var google_conversion_color = "666666";
+var google_conversion_label = "gbUUCPTlhAIQvJ3N_AM";
+var google_conversion_value = 0;
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/1066618556/?label=gbUUCPTlhAIQvJ3N_AM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+<!-- Google Code for RM codechef Remarketing List -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 968176136;
+var google_conversion_language = "en";
+var google_conversion_format = "3";
+var google_conversion_color = "ffffff";
+var google_conversion_label = "iDk7CPDZ7wMQiOTUzQM";
+var google_conversion_value = 0;
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/968176136/?label=iDk7CPDZ7wMQiOTUzQM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+<div class='cc-footer-seo'>
+<span><a href='/'>CodeChef</a> - A Platform for Aspiring Programmers</span>
+<p>CodeChef was created as a platform to help programmers make it big in the world of algorithms, <strong>computer programming</strong> and <strong>programming contests</strong>. At CodeChef we work hard to revive the geek in you by hosting a <strong>programming contest</strong> at the start of the month and another smaller programming challenge in the middle of the month. We also aim to have training sessions and discussions related to <strong>algorithms, binary search</strong>, technicalities like <strong>array size</strong> and the likes. Apart from providing a platform for <strong>programming competitions</strong>, CodeChef also has various algorithm tutorials and forum discussions to help those who are new to the world of <strong>computer programming</strong>.</p>
+<p></p>
+<span><a href='/problems/easy'>Practice Section</a> - A Place to hone your 'Computer Programming Skills'</span>
+<p>Try your hand at one of our many practice problems and submit your solution in a language of your choice. Our <strong>programming contest</strong> judge accepts solutions in over 35+ programming languages. Preparing for coding contests were never this much fun! Receive points, and move up through the CodeChef ranks. Use our practice section to better prepare yourself for the multiple <strong>programming challenges</strong> that take place through-out the month on CodeChef. </p>
+<p></p>
+<span><a href='/contests/'>Compete</a> - Monthly Programming Contests and Cook-offs</span>
+<p>Here is where you can show off your <strong>computer programming</strong> skills. Take part in our 10 day long monthly <strong>coding contest</strong> and the shorter format Cook-off <strong>coding contest</strong>. Put yourself up for recognition and win great prizes. Our <strong>programming contests</strong> have prizes worth up to Rs.20,000 and $700lots more CodeChef goodies up for grabs. </p>
+<p></p>
+<span><a href='http://discuss.codechef.com/'>Discuss</a></span>
+<p>Are you new to <strong>computer programming</strong>? Do you need help with algorithms? Then be a part of CodeChef's Forums and interact with all our programmers - they love helping out other programmers and sharing their ideas. Have discussions around <strong>binary search, array size, branch-and-bound, Dijkstra's algorithm, Encryption algorithm</strong> and more by visiting the CodeChef Forums and Wiki section.</p>
+<p></p>
+<span><a href='/community'>CodeChef Community</a></span>
+<p>As part of our Educational initiative, we give institutes the opportunity to associate with CodeChef in the form of Campus Chapters. Hosting <strong>online programming competitions</strong> is not the only feature on CodeChef. You can also host a <strong>coding contest</strong> for your institute on CodeChef, organize an <strong>algorithm</strong> event and be a guest author on our blog. </p>
+<p></p>
+<span><a href='/goforgold'>Go For Gold</a></span>
+<p>The Go for Gold Initiative was launched about a year after CodeChef was incepted, to help prepare Indian students for the <strong>ACM ICPC</strong> World Finals competition. In the run up to the <strong>ACM ICPC</strong> competition, the Go for Gold initiative uses CodeChef as a platform to train students for the <strong>ACM ICPC</strong> competition via multiple warm up contests. As an added incentive the Go for Gold initiative is also offering over Rs.8 lacs to the Indian team that beats the 29th position at the <strong>ACM ICPC</strong> world finals. Find out more about the Go for Gold and the <strong>ACM ICPC</strong> competition <a href="/goforgold">here</a>.</p>
+</div>  </div>
+</div>
+<div id="block-block-48" class="block block-block block-header">
+  <div class="content">
+        <script type ='text/javascript' src ='/misc/jquery.cookie.js'>  </script><script type ='text/javascript' src ='/misc/notification.js'>  </script>  </div>
+</div>
+                        </div>
+                    </div>
+                                      <div id="fb-root"></div>
+      <script type="text/javascript">
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId  : '191217060453',
+            status : true, // check login status
+            cookie : true, // enable cookies to allow the server to access the session
+            xfbml  : true,
+            logging: '0',
+            channelURL: 'http://www.codechef.com/sites/all/modules/fbconnect/channel.html',
+            oauth : true
+          });
+
+          jQuery(document).trigger('fb:init');
+        };
+
+        (function() {
+          var e = document.createElement('script');
+          e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+          e.async = true;
+          document.getElementById('fb-root').appendChild(e);
+        }());
+      </script>
+<div style="display: none"><form action="/DEC13/problems/ALEXNUMB?destination=node%2F4040585"  accept-charset="UTF-8" method="post" id="fbconnect-autoconnect-form">
+<div><input type="submit" name="op" id="edit-connect" value="Connect"  class="form-submit" />
+<input type="hidden" name="form_build_id" id="form-7c2839c1492fcbd45db5902932aba0e3" value="form-7c2839c1492fcbd45db5902932aba0e3"  />
+<input type="hidden" name="form_token" id="edit-fbconnect-autoconnect-form-form-token" value="f67e23dad5a73e2e431449c7a54f378b"  />
+<input type="hidden" name="form_id" id="edit-fbconnect-autoconnect-form" value="fbconnect_autoconnect_form"  />
+
+</div></form>
+</div>            </center>
+    </body>
+</html>

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1382796741 source:d:\programming\problem atchive\lightoj 1006\main.cpp
+	<stdio.h>
+	<iostream>
+	<limits.h>
+
